@@ -5,7 +5,9 @@
 body{
     background-color: #EFEAE3;
     font-family: "Roboto", sans-serif;
+    /* overflow: hidden; */
 }
+
 #expand-nav-menu{
     display:flex;
     flex-direction: column;

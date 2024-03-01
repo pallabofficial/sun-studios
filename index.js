@@ -1,3 +1,10 @@
+const scroll = new LocomotiveScroll({
+    el: document.querySelector("#supreme"),
+    smooth: true
+});
+
+
+
 
 const menu = document.querySelector("#nav-menu-div");
 const navbar = document.querySelector("nav");

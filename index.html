@@ -7,58 +7,63 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Sun Studios</title>
 </head>
 <body>
-   <main>
-<!-- ----------------------------------------------------navbar--------------------------------------------------------- -->
-        <nav class=" relative w-full h-[15vh] flex justify-between items-center px-[5vw] pt-[3vh] z-40 bg-[#EFEAE3] mb-[7vh]">
-            <div id="logo-div" class="w-[40%] h-[75%] ">
-                <img class="object-cover" src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15c2_Sundown%20logo.svg" alt="logo...">
-             </div>
-             <div id="nav-menu-div" class="w-[30%] h-[45%] border border-[black] rounded-full flex justify-center gap-[3vw] items-center px-[2vw] py-[1vw] " > 
-                <div id="menu-icon-div" class="w-[20%] h-[50%]"> 
-                    <img class="object-fill w-full h-full" src="images/menu.png" alt=""> 
-                </div>
-                <h5 >Menu</h5>
-             </div>
+    <div id="supreme">
 
-        </nav>
-        <section id="expand-nav-menu" class="absolute top-[-100%] w-full h-[35vh] rounded-b-[30px] px-[5vw] py-[5vh] bg-[#EFEAE3] border border-[grey] transition-all duration-1000 ease-in-out z-30 ">
-            <a href="#" class="text-[17vw] leading-[16vw]  font-bold">WORK</a>
-            <a href="#" class="text-[17vw] leading-[16vw]  font-bold">STUDIO</a>
-            <a href="#" class="text-[17vw] leading-[16vw]  font-bold">CONTACT</a>
+        <div id="main">
+    <!-- ----------------------------------------------------navbar--------------------------------------------------------- -->
+            <nav class=" relative w-full h-[15vh] flex justify-between items-center px-[5vw] pt-[3vh] z-40 bg-[#EFEAE3] mb-[7vh]">
+                <div id="logo-div" class="w-[40%] h-[75%] ">
+                    <img class="object-cover" src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15c2_Sundown%20logo.svg" alt="logo...">
+                </div>
+                <div id="nav-menu-div" class="w-[30%] h-[45%] border border-[black] rounded-full flex justify-center gap-[3vw] items-center px-[2vw] py-[1vw] " > 
+                    <div id="menu-icon-div" class="w-[20%] h-[50%]"> 
+                        <img class="object-fill w-full h-full" src="images/menu.png" alt=""> 
+                    </div>
+                    <h5 >Menu</h5>
+                </div>
+
+            </nav>
+            <section id="expand-nav-menu" class="absolute top-[-100%] w-full h-[35vh] rounded-b-[30px] px-[5vw] py-[5vh] bg-[#EFEAE3] border border-[grey] transition-all duration-1000 ease-in-out z-30 ">
+                <a href="#" class="text-[17vw] leading-[16vw]  font-bold">WORK</a>
+                <a href="#" class="text-[17vw] leading-[16vw]  font-bold">STUDIO</a>
+                <a href="#" class="text-[17vw] leading-[16vw]  font-bold">CONTACT</a>
+                
             
-         
-        </section>
-        <div id="dark-screen" class=" w-full h-[100vh] bg-black opacity-50 absolute top-[-100%] transition-all duration-1000 ease-in-out z-20"></div>
-        
-    
-<!-- ---------------------------------------------------banner------------------------------------------------- -->
-        <header id="header" class="min-h-full w-full flex-col justify-between items-center px-[5vw]">
-            <section id="banner" class="flex-col gap-[5vh] pb-[5vh] border border-b-[grey]">
-                <div id="title" class="flex-col  items-end text-[17vw] leading-[16vw] font-bold">
-                    <h1>SPACES</h1>
-                    <h1>THAT</h1>
-                    <h1>INSPIRE</h1>
-                </div>
-                <div id="tagline" class="w-[85%] text-left font-bold text-[6vw] leading-[6vw] ">
-                    <p>Sundown is a multi-disciplinary studio focused on creating unique, end-to-end experiences and environments.</p>
-                </div>
             </section>
-            <section id="banner-video-div" class = "h-[70vh] w-full bg-red-300 rounded-[20px] overflow-hidden">  
-                <video autoplay loop muted src="videos/banner-video.mp4" class="h-full object-cover"></video>
-            </section>
-        </header>
-
-
-<!-- -------------------------------------------------------slider -------------------------------------------------------- -->
+            <div id="dark-screen" class=" w-full h-[100vh] bg-black opacity-60 absolute top-[-100%] transition-all duration-1000 ease-in-out z-20"></div>
+            
         
-        <section id="slider" class="w-full h-[20vh]"></section>
+    <!-- ---------------------------------------------------banner------------------------------------------------- -->
+            <header id="header" class="min-h-full w-full flex-col justify-between items-center px-[5vw]">
+                <section id="banner" class="flex-col gap-[5vh] pb-[5vh] border border-b-[grey]">
+                    <div id="title" class="flex-col  items-end text-[17vw] leading-[16vw] font-bold">
+                        <h1>SPACES</h1>
+                        <h1>THAT</h1>
+                        <h1>INSPIRE</h1>
+                    </div>
+                    <div id="tagline" class="w-[85%] text-left font-bold text-[6vw] leading-[6vw] ">
+                        <p>Sundown is a multi-disciplinary studio focused on creating unique, end-to-end experiences and environments.</p>
+                    </div>
+                </section>
+                <section id="banner-video-div" class = "h-[70vh] w-full  rounded-[20px] overflow-hidden">  
+                    <video autoplay loop muted src="videos/banner-video.mp4" class="h-full object-cover"></video>
+                </section>
+            </header>
 
-<!-- ----------------------------------------------------------------------------------------------------------------- -->
-    </main>
+
+    <!-- -------------------------------------------------------slider -------------------------------------------------------- -->
+            
+            <section id="slider" class="w-full h-[20vh]"></section>
+
+    <!-- ----------------------------------------------------------------------------------------------------------------- -->
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
