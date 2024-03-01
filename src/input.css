@@ -30,3 +30,36 @@ body{
     justify-content: space-between;
     align-items: flex-end;
 }
+#slider{
+    display: flex;
+    align-items: center;
+}
+#moving-text{
+    overflow-x: auto;
+}
+.moving-text-div{
+    display:inline-block;
+    animation: text-anim 10s linear infinite;
+
+}
+.slider-text{
+    font-size: 13vw;
+    display:inline-block;
+    font-weight: bold;
+}
+.slider-separator{
+    width:5vw;
+    height: 5vw;
+    border-radius: 50%;
+    background-color: #FE330A;
+    display:inline-block;
+    margin: 3vw 3vw;
+}
+@keyframes text-anim {
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(-100%)
+    }
+}
