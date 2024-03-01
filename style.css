@@ -556,12 +556,24 @@ video {
   top: -100%;
 }
 
+.top-0 {
+  top: 0px;
+}
+
 .z-10 {
   z-index: 10;
 }
 
+.z-20 {
+  z-index: 20;
+}
+
 .z-40 {
   z-index: 40;
+}
+
+.z-\[19\] {
+  z-index: 19;
 }
 
 .mb-\[7vh\] {
@@ -572,8 +584,16 @@ video {
   display: flex;
 }
 
+.h-\[100vh\] {
+  height: 100vh;
+}
+
 .h-\[15vh\] {
   height: 15vh;
+}
+
+.h-\[20vh\] {
+  height: 20vh;
 }
 
 .h-\[35vh\] {
@@ -600,12 +620,12 @@ video {
   height: 100%;
 }
 
-.h-\[20vh\] {
-  height: 20vh;
-}
-
 .min-h-full {
   min-height: 100%;
+}
+
+.w-\[100vw\] {
+  width: 100vw;
 }
 
 .w-\[20\%\] {
@@ -702,6 +722,16 @@ video {
   background-color: rgb(252 165 165 / var(--tw-bg-opacity));
 }
 
+.bg-red-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -764,14 +794,38 @@ video {
   line-height: 6vw;
 }
 
+.opacity-30 {
+  opacity: 0.3;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
 
+.delay-500 {
+  transition-delay: 500ms;
+}
+
+.delay-1000 {
+  transition-delay: 1000ms;
+}
+
 .duration-1000 {
   transition-duration: 1000ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
 }
 
 .ease-in-out {
