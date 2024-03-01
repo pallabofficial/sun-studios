@@ -564,6 +564,10 @@ video {
   z-index: 40;
 }
 
+.mb-\[7vh\] {
+  margin-bottom: 7vh;
+}
+
 .flex {
   display: flex;
 }
@@ -584,12 +588,24 @@ video {
   height: 50%;
 }
 
+.h-\[70vh\] {
+  height: 70vh;
+}
+
 .h-\[75\%\] {
   height: 75%;
 }
 
 .h-full {
   height: 100%;
+}
+
+.h-\[20vh\] {
+  height: 20vh;
+}
+
+.min-h-full {
+  min-height: 100%;
 }
 
 .w-\[20\%\] {
@@ -604,8 +620,20 @@ video {
   width: 40%;
 }
 
+.w-\[85\%\] {
+  width: 85%;
+}
+
 .w-full {
   width: 100%;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-end {
+  align-items: flex-end;
 }
 
 .items-center {
@@ -622,6 +650,18 @@ video {
 
 .gap-\[3vw\] {
   gap: 3vw;
+}
+
+.gap-\[5vh\] {
+  gap: 5vh;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.rounded-\[20px\] {
+  border-radius: 20px;
 }
 
 .rounded-full {
@@ -647,9 +687,19 @@ video {
   border-color: rgb(128 128 128 / var(--tw-border-opacity));
 }
 
+.border-b-\[grey\] {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(128 128 128 / var(--tw-border-opacity));
+}
+
 .bg-\[\#EFEAE3\] {
   --tw-bg-opacity: 1;
   background-color: rgb(239 234 227 / var(--tw-bg-opacity));
+}
+
+.bg-red-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -682,12 +732,24 @@ video {
   padding-bottom: 5vh;
 }
 
+.pb-\[5vh\] {
+  padding-bottom: 5vh;
+}
+
 .pt-\[3vh\] {
   padding-top: 3vh;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .text-\[17vw\] {
   font-size: 17vw;
+}
+
+.text-\[6vw\] {
+  font-size: 6vw;
 }
 
 .font-bold {
@@ -696,6 +758,10 @@ video {
 
 .leading-\[16vw\] {
   line-height: 16vw;
+}
+
+.leading-\[6vw\] {
+  line-height: 6vw;
 }
 
 .transition-all {
@@ -719,6 +785,25 @@ body{
 
 #expand-nav-menu{
   display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#header{
+  display: flex;
+  flex-direction: column;
+  gap:7vh
+}
+
+#banner{
+  display: flex;
+  flex-direction: column;
+  gap:10vh
+}
+
+#title{
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;

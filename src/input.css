@@ -12,3 +12,19 @@ body{
     justify-content: space-between;
     align-items: flex-end;
 }
+#header{
+    display: flex;
+    flex-direction: column;
+    gap:7vh
+}
+#banner{
+    display: flex;
+    flex-direction: column;
+    gap:10vh
+}
+#title{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
