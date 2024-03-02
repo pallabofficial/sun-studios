@@ -7,7 +7,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Sun Studios</title>
 </head>
@@ -39,8 +38,8 @@
         
     
 <!-- ---------------------------------------------------banner------------------------------------------------- -->
-        <header id="header" class="min-h-full w-full flex-col justify-between items-center px-[5vw]">
-            <section id="banner" class="flex-col gap-[5vh] pb-[5vh] border border-b-[grey]">
+        <header id="header" class="min-h-full w-full flex-col justify-between items-center ">
+            <section id="banner" class="flex-col  pb-[5vh] border border-b-[grey] px-[5vw]">
                 <div id="title" class="flex-col  items-end text-[17vw] leading-[16vw] font-bold">
                     <h1>SPACES</h1>
                     <h1>THAT</h1>
@@ -50,9 +49,17 @@
                     <p>Sundown is a multi-disciplinary studio focused on creating unique, end-to-end experiences and environments.</p>
                 </div>
             </section>
-            <section id="banner-video-div" class = "h-[70vh] w-full  rounded-[20px] overflow-hidden">  
-                <video autoplay loop muted src="videos/banner-video.mp4" class="h-full object-cover"></video>
-            </section>
+            <div id="vid-anim-wrapper" class="relative h-[80vh] w-full flex justify-center items-center px-[5vw]">
+                <section id="banner-video-div" class = " h-[70vh] w-full  rounded-[20px] overflow-hidden">  
+                    <video autoplay loop muted src="videos/banner-video.mp4" class="relative h-full object-cover z-40"></video>
+                    
+                </section>
+                <div id="animation-oval" class="z-10 filter blur-md absolute top-[-5vh] right-[-30vw] w-[50vh] h-[20vh] rounded-tl-full rounded-bl-full bg-gradient-to-tr from-[#FE330A]  to-[#fe530a]">
+                    
+                </div>
+              
+            </div>
+            
         </header>
 
 
@@ -96,7 +103,7 @@
        </section>
     </div>
     
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    
     <script src="index.js"></script>
 </body>
 </html>

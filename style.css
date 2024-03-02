@@ -552,8 +552,20 @@ video {
   position: relative;
 }
 
+.right-\[-30vw\] {
+  right: -30vw;
+}
+
 .top-\[-100\%\] {
   top: -100%;
+}
+
+.top-\[-5vh\] {
+  top: -5vh;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .z-20 {
@@ -588,6 +600,10 @@ video {
   height: 15vh;
 }
 
+.h-\[20vh\] {
+  height: 20vh;
+}
+
 .h-\[35vh\] {
   height: 35vh;
 }
@@ -616,12 +632,12 @@ video {
   height: 80%;
 }
 
-.h-full {
-  height: 100%;
+.h-\[80vh\] {
+  height: 80vh;
 }
 
-.h-\[90\%\] {
-  height: 90%;
+.h-full {
+  height: 100%;
 }
 
 .min-h-full {
@@ -642,6 +658,10 @@ video {
 
 .w-\[40\%\] {
   width: 40%;
+}
+
+.w-\[50vh\] {
+  width: 50vh;
 }
 
 .w-\[85\%\] {
@@ -676,10 +696,6 @@ video {
   gap: 3vw;
 }
 
-.gap-\[5vh\] {
-  gap: 5vh;
-}
-
 .overflow-hidden {
   overflow: hidden;
 }
@@ -699,6 +715,14 @@ video {
 .rounded-b-\[30px\] {
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
+}
+
+.rounded-bl-full {
+  border-bottom-left-radius: 9999px;
+}
+
+.rounded-tl-full {
+  border-top-left-radius: 9999px;
 }
 
 .border {
@@ -728,6 +752,20 @@ video {
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-gradient-to-tr {
+  background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+}
+
+.from-\[\#FE330A\] {
+  --tw-gradient-from: #FE330A var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(254 51 10 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-\[\#fe530a\] {
+  --tw-gradient-to: #fe530a var(--tw-gradient-to-position);
 }
 
 .object-cover {
@@ -796,6 +834,15 @@ video {
   opacity: 0.6;
 }
 
+.blur-md {
+  --tw-blur: blur(12px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -826,7 +873,7 @@ body{
 #header{
   display: flex;
   flex-direction: column;
-  gap:7vh
+  /* gap:7vh */
 }
 
 #banner{
@@ -878,5 +925,20 @@ body{
 
   to{
     transform: translate(-100%)
+  }
+}
+
+#animation-oval{
+  animation: oval-anim 4s linear  infinite alternate;
+  transform-origin: 0% 0%;
+}
+
+@keyframes oval-anim {
+  from{
+    transform:translate(-15vw, -10vw) scale(1.3) skew(10deg, 15deg);
+  }
+
+  to{
+    transform:translate(5vw, 15vw) scale(1.3) skew(10deg, -20deg);
   }
 }
