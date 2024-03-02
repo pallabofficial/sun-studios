@@ -143,4 +143,17 @@ body{
     line-height: 4vw;
 }
 
-/* ---------------------------------------------------------------          ----------------------------------------- */
+/* ---------------------------------------------------------------footer----------------------------------------- */
+
+#footer-animation{
+    animation: footer-anim 3s linear  infinite alternate;
+    /* transform-origin: 0% 0%; */
+}
+@keyframes footer-anim {
+    from{
+        transform:translate(-10vw,5vw) skew(20deg,-20deg);
+    }
+    to{
+        /* transform:translate(10vw,-20vw) ; */
+    }
+}
