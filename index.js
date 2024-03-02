@@ -23,3 +23,11 @@ menu.addEventListener("click", (event)=>{
     }
     
 })
+
+// ----------------------------------------------------fixed speed of all the videos------------------------------------
+
+const bannerVideo = document.querySelector("#banner-video");
+bannerVideo.playbackRate = 0.5;
+
+const aboutVideo = document.querySelector("#about-video");
+aboutVideo.playbackRate = 0.5;

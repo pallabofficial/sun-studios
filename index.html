@@ -17,11 +17,11 @@
 <!-- ----------------------------------------------------navbar--------------------------------------------------------- -->
         <nav class=" relative w-full h-[15vh] flex justify-between items-center px-[5vw] pt-[3vh] z-[999] bg-[#EFEAE3] mb-[7vh]">
             <div id="logo-div" class="w-[40%] h-[75%] ">
-                <img class="object-cover" src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15c2_Sundown%20logo.svg" alt="logo...">
+                <img class="object-cover" src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15c2_Sundown%20logo.svg" alt="logo..." loading="lazy">
             </div>
             <div id="nav-menu-div" class="w-[30%] h-[45%] border border-[black] rounded-full flex justify-center gap-[3vw] items-center px-[2vw] py-[1vw] " > 
                 <div id="menu-icon-div" class="w-[20%] h-[50%]"> 
-                    <img class="object-fill w-full h-full" src="images/menu.png" alt=""> 
+                    <img class="object-fill w-full h-full" src="images/menu.png" alt="" loading="lazy"> 
                 </div>
                 <h5 >Menu</h5>
             </div>
@@ -51,7 +51,7 @@
             </section>
             <div id="vid-anim-wrapper" class="relative h-[80vh] w-full flex justify-center items-center px-[5vw]">
                 <section id="banner-video-div" class = "relative h-[70vh] w-full  rounded-[20px] overflow-hidden">  
-                    <video autoplay loop muted src="videos/banner-video-smallScreen.mp4" class="absolute w-full h-full object-cover object-center z-40"></video>
+                    <video id="banner-video" autoplay loop muted src="videos/banner-video-smallScreen.mp4" class="absolute w-full h-full object-cover object-center z-40" loading="lazy"></video>
                     
                 </section>
                 <div id="animation-oval" class="z-10 filter blur-md absolute top-[-5vh] right-[-30vw] w-[50vh] h-[20vh] rounded-tl-full rounded-bl-full bg-gradient-to-tr from-[#FE330A]  to-[#fe530a]">
@@ -103,7 +103,7 @@
             
             <div id=" about-vid-div" class="w-[80%] h-[60%] flex flex-col justify-between items-start">
                 <section id="about-video-div" class = " z-20 relative w-full h-[55%]  rounded-[5px] overflow-hidden ">  
-                    <video autoplay loop muted src="videos/about-video-smallScreen.mp4" class="absolute h-full w-full object-cover"></video>
+                    <video id="about-video" autoplay loop muted src="videos/about-video-smallScreen.mp4" class="absolute h-full w-full object-cover" loading="lazy"></video>
                 </section>
                 
                 <p class="z-20 relative w-[100%] h-[35%] text-[4vw] leading-[4vw] tracking-tighter">We love to create, we love to solve, we love to collaborate, and we love to turn amazing ideas into reality. We’re here to partner with you through every step of the process and know that relationships are the most important things we build.</p>
