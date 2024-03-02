@@ -17,6 +17,7 @@ body{
 #header{
     display: flex;
     flex-direction: column;
+    align-items: center;
     /* gap:7vh */
 }
 #banner{
@@ -80,3 +81,21 @@ body{
     
 
 }
+
+
+/* --------------------------------------------------------about section---------------------------------------- */
+
+#about-anim{
+    animation: anim 4s linear  infinite alternate;
+    /* transform-origin: 0% 0%; */
+}
+@keyframes anim {
+    from{
+        transform:translate(-20vw,5vw) scale(1.25) skew(0deg,-15deg);
+    }
+    to{
+        transform:translate(10vw,-20vw) skew(0deg,0deg);
+    }
+}
+
+/* ---------------------------------------------------------------          ----------------------------------------- */
