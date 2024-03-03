@@ -40,7 +40,7 @@ Front-end:-<br>
 ## Installation
 •	step-1: Download all the projects files put it inside a folder<br>
 •	step-2: open the project in any IDE(example:-vscode)<br>
-•	step-3: open the terminal and type the following command<br>npm run dev<br>
+•	step-3: open the terminal and type the following command:-"npm run dev"<br>
 •	step-4: open the index.html page in any browser(example:- chrome) and view the website locally<br><br>
 
 
