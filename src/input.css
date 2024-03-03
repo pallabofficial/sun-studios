@@ -143,6 +143,20 @@ body{
     line-height: 4vw;
 }
 
+/* ------------------------------------------------------------------services--------------------------------- */
+/* 
+#design{
+    color:#504A45;
+} */
+ #services-details-2, #services-details-3, #services-img-2, #services-img-3{
+    visibility: hidden;
+
+}
+
+.services-img{
+    object-position: center;
+}
+
 /* ---------------------------------------------------------------footer----------------------------------------- */
 
 #footer-animation{
