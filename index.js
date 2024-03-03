@@ -28,7 +28,7 @@ expandNavItems();
 // ---------------------------------------------fixed speed of all the videos------------------------------------
 
 const bannerVideo = document.querySelector("#banner-video");
-bannerVideo.playbackRate = 0.5;
+bannerVideo.playbackRate = 0.8;
 
 const aboutVideo = document.querySelector("#about-video");
 aboutVideo.playbackRate = 0.5;
@@ -101,4 +101,35 @@ function selectServices(){
 }
 selectServices();
 
-// -----------------------------------------------------------         -----------------------------------------------
+// ----------------------------------------------------------- client section        -----------------------------------------------
+let isDragging = false;
+let startX;
+let scrollLeft;
+
+const scrollerSection = document.getElementById("client-card-div");
+
+scrollerSection.addEventListener("mousedown", (e) => {
+isDragging = true;
+startX = e.pageX - scrollerSection.offsetLeft;
+scrollLeft = scrollerSection.scrollLeft;
+});
+
+document.addEventListener("mouseleave", () => {
+if (isDragging) {
+   isDragging = false;
+}
+});
+
+document.addEventListener("mouseup", () => {
+if (isDragging) {
+   isDragging = false;
+}
+});
+
+document.addEventListener("mousemove", (e) => {
+if (!isDragging) return;
+e.preventDefault();
+const x = e.pageX - scrollerSection.offsetLeft;
+const walk = (x - startX) * 1.5;
+scrollerSection.scrollLeft = scrollLeft - walk;
+});

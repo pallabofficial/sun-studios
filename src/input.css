@@ -166,48 +166,56 @@ body{
 }
 
 /* ----------------------------------------------------------------client section------------------------------ */
-#client-scroller-div::-webkit-scrollbar{
-    display:none;
-}
-.client-card{
-    width:60vw;
-    padding: 0 5vw;
-    /* border-left: 1px solid grey; */
-    display:flex;
-    flex-direction: column;
-
-}
-.client-logo-div{
-    width:100%;
-    height:10vh;
-    display: inline-block;
-    margin-bottom: 3vh;
-    /* white-space: normal; */
- 
-    
-}
-.client-logo{
-    height:100%;
-    object-fit: cover;
-    
-}
-.client-desc-div{
-    width:100%;
-
-    font-size: 4vw;
-    line-height: 4.5vw;
-    overflow: hidden;
-    display: block;
-    white-space: normal;
-}
-
-.client-desc{
-    width:100%;
-    height:100%;
-    white-space: normal;
+#client-section{
    
+    padding-left:5vw;
+    margin-top: 20vw;
+ }
+ #client-card-div {
+   width: 100%;
+   white-space: nowrap;
+   overflow: hidden;
+   margin:5vh 0;
+   
+   
+ }
+ #clients-title-div {
+   display: flex;
+   align-items: center;
+   gap: 3vw;
+   font-size: 5vw;
+ }
+ #client-title {
+    font-size: 5vw;
+ }
+ #bullet-point {
+   width: 3vw;
+   height:3vw;
+   border-radius: 50%;
+   background-color: #fe330a;
+ }
+ .cards {
+   display: inline-block;
+   width: 60vw;
+   aspect-ratio: 3/4;
+   background-color: bisque;
+   margin-right: 20px;
+ }
+ .logo {
+   width: 100%;
+   height: 50%;
 
-}
+   background-color: red;
+ }
+ .desc {
+   width: 100%;
+   height: 50%;
+
+   background-color: blue;
+   color: white;
+   white-space: normal;
+   overflow: hidden;
+ }
 
 /* ---------------------------------------------------------------footer----------------------------------------- */
 
