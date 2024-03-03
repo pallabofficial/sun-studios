@@ -648,10 +648,6 @@ video {
   margin-top: 10vw;
 }
 
-.ml-\[-1\] {
-  margin-left: -1;
-}
-
 .flex {
   display: flex;
 }
@@ -742,10 +738,6 @@ video {
 
 .h-\[70vw\] {
   height: 70vw;
-}
-
-.h-\[75\%\] {
-  height: 75%;
 }
 
 .h-\[7vw\] {
@@ -1198,6 +1190,8 @@ body{
   align-items: flex-end;
 }
 
+/* -------------------------------------------------------slider----------------------------------------------- */
+
 #slider{
   display: flex;
   align-items: center;
@@ -1205,6 +1199,10 @@ body{
 
 #moving-text{
   overflow-x: auto;
+}
+
+#moving-text::-webkit-scrollbar{
+  display: none;
 }
 
 .moving-text-div{
@@ -1236,6 +1234,8 @@ body{
     transform: translate(-100%)
   }
 }
+
+/* -------------------------------------------------------------------------------------------------------- */
 
 #animation-oval{
   animation: oval-anim 4s linear  infinite alternate;

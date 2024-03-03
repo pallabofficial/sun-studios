@@ -31,12 +31,17 @@ body{
     justify-content: space-between;
     align-items: flex-end;
 }
+
+/* -------------------------------------------------------slider----------------------------------------------- */
 #slider{
     display: flex;
     align-items: center;
 }
 #moving-text{
     overflow-x: auto;
+}
+#moving-text::-webkit-scrollbar{
+    display: none;
 }
 .moving-text-div{
     display:inline-block;
@@ -64,6 +69,9 @@ body{
         transform: translate(-100%)
     }
 }
+
+
+/* -------------------------------------------------------------------------------------------------------- */
 
 
 #animation-oval{
