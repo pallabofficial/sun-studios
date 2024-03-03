@@ -223,3 +223,7 @@ body{
         /* transform:translate(10vw,-20vw) ; */
     }
 }
+.licenses{
+    color:white;
+    font-size: 3vw;
+}
