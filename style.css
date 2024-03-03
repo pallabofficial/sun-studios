@@ -632,10 +632,6 @@ video {
   margin-bottom: 10vh;
 }
 
-.mb-\[5vh\] {
-  margin-bottom: 5vh;
-}
-
 .mb-\[7vh\] {
   margin-bottom: 7vh;
 }
@@ -646,6 +642,10 @@ video {
 
 .mt-\[10vw\] {
   margin-top: 10vw;
+}
+
+.mb-\[5vw\] {
+  margin-bottom: 5vw;
 }
 
 .flex {
@@ -670,10 +670,6 @@ video {
 
 .h-\[120vh\] {
   height: 120vh;
-}
-
-.h-\[12vh\] {
-  height: 12vh;
 }
 
 .h-\[15vh\] {
@@ -734,10 +730,6 @@ video {
 
 .h-\[70vw\] {
   height: 70vw;
-}
-
-.h-\[75vh\] {
-  height: 75vh;
 }
 
 .h-\[7vw\] {
@@ -856,10 +848,6 @@ video {
   gap: 3vw;
 }
 
-.overflow-auto {
-  overflow: auto;
-}
-
 .overflow-hidden {
   overflow: hidden;
 }
@@ -939,6 +927,16 @@ video {
   border-bottom-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.border-b-\[\#717070\] {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(113 112 112 / var(--tw-border-opacity));
+}
+
+.border-b-\[white\] {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
 .bg-\[\#504A45\] {
   --tw-bg-opacity: 1;
   background-color: rgb(80 74 69 / var(--tw-bg-opacity));
@@ -1012,11 +1010,6 @@ video {
   padding-right: 5vw;
 }
 
-.py-\[10vh\] {
-  padding-top: 10vh;
-  padding-bottom: 10vh;
-}
-
 .py-\[10vw\] {
   padding-top: 10vw;
   padding-bottom: 10vw;
@@ -1032,12 +1025,18 @@ video {
   padding-bottom: 5vh;
 }
 
-.pb-\[5vh\] {
-  padding-bottom: 5vh;
+.py-\[5vw\] {
+  padding-top: 5vw;
+  padding-bottom: 5vw;
 }
 
-.pt-\[3vh\] {
-  padding-top: 3vh;
+.py-\[4vw\] {
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+}
+
+.pb-\[5vh\] {
+  padding-bottom: 5vh;
 }
 
 .pb-\[5vw\] {
@@ -1048,12 +1047,8 @@ video {
   padding-top: 10vw;
 }
 
-.pb-\[10vw\] {
-  padding-bottom: 10vw;
-}
-
-.pb-\[8vw\] {
-  padding-bottom: 8vw;
+.pt-\[3vh\] {
+  padding-top: 3vh;
 }
 
 .text-left {
@@ -1130,6 +1125,18 @@ video {
 
 .leading-\[8vw\] {
   line-height: 8vw;
+}
+
+.leading-\[17\.5vw\] {
+  line-height: 17.5vw;
+}
+
+.leading-\[18vw\] {
+  line-height: 18vw;
+}
+
+.leading-\[18\.5vw\] {
+  line-height: 18.5vw;
 }
 
 .tracking-tighter {
