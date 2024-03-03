@@ -165,6 +165,50 @@ body{
     object-position: center;
 }
 
+/* ----------------------------------------------------------------client section------------------------------ */
+#client-scroller-div::-webkit-scrollbar{
+    display:none;
+}
+.client-card{
+    width:60vw;
+    padding: 0 5vw;
+    /* border-left: 1px solid grey; */
+    display:flex;
+    flex-direction: column;
+
+}
+.client-logo-div{
+    width:100%;
+    height:10vh;
+    display: inline-block;
+    margin-bottom: 3vh;
+    /* white-space: normal; */
+ 
+    
+}
+.client-logo{
+    height:100%;
+    object-fit: cover;
+    
+}
+.client-desc-div{
+    width:100%;
+
+    font-size: 4vw;
+    line-height: 4.5vw;
+    overflow: hidden;
+    display: block;
+    white-space: normal;
+}
+
+.client-desc{
+    width:100%;
+    height:100%;
+    white-space: normal;
+   
+
+}
+
 /* ---------------------------------------------------------------footer----------------------------------------- */
 
 #footer-animation{

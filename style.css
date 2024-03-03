@@ -632,8 +632,8 @@ video {
   margin-bottom: 10vh;
 }
 
-.mb-\[20vh\] {
-  margin-bottom: 20vh;
+.mb-\[5vh\] {
+  margin-bottom: 5vh;
 }
 
 .mb-\[7vh\] {
@@ -670,6 +670,10 @@ video {
 
 .h-\[120vh\] {
   height: 120vh;
+}
+
+.h-\[12vh\] {
+  height: 12vh;
 }
 
 .h-\[15vh\] {
@@ -740,6 +744,10 @@ video {
   height: 70vw;
 }
 
+.h-\[75vh\] {
+  height: 75vh;
+}
+
 .h-\[7vw\] {
   height: 7vw;
 }
@@ -754,10 +762,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[90\%\] {
-  height: 90%;
 }
 
 .min-h-full {
@@ -792,10 +796,6 @@ video {
   width: 30%;
 }
 
-.w-\[40\%\] {
-  width: 40%;
-}
-
 .w-\[50\%\] {
   width: 50%;
 }
@@ -818,18 +818,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[35\%\] {
-  width: 35%;
-}
-
-.w-\[25\%\] {
-  width: 25%;
-}
-
-.w-\[90\%\] {
-  width: 90%;
 }
 
 .flex-col {
@@ -870,6 +858,10 @@ video {
 
 .gap-\[3vw\] {
   gap: 3vw;
+}
+
+.overflow-auto {
+  overflow: auto;
 }
 
 .overflow-hidden {
@@ -1017,6 +1009,11 @@ video {
 .px-\[5vw\] {
   padding-left: 5vw;
   padding-right: 5vw;
+}
+
+.py-\[10vh\] {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 .py-\[10vw\] {
@@ -1349,6 +1346,49 @@ body{
 .services-img{
   -o-object-position: center;
      object-position: center;
+}
+
+/* ----------------------------------------------------------------client section------------------------------ */
+
+#client-scroller-div::-webkit-scrollbar{
+  display:none;
+}
+
+.client-card{
+  width:60vw;
+  padding: 0 5vw;
+  /* border-left: 1px solid grey; */
+  display:flex;
+  flex-direction: column;
+}
+
+.client-logo-div{
+  width:100%;
+  height:10vh;
+  display: inline-block;
+  margin-bottom: 3vh;
+  /* white-space: normal; */
+}
+
+.client-logo{
+  height:100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.client-desc-div{
+  width:100%;
+  font-size: 4vw;
+  line-height: 4.5vw;
+  overflow: hidden;
+  display: block;
+  white-space: normal;
+}
+
+.client-desc{
+  width:100%;
+  height:100%;
+  white-space: normal;
 }
 
 /* ---------------------------------------------------------------footer----------------------------------------- */
