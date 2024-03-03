@@ -109,27 +109,41 @@ let scrollLeft;
 const scrollerSection = document.getElementById("client-card-div");
 
 scrollerSection.addEventListener("mousedown", (e) => {
-isDragging = true;
-startX = e.pageX - scrollerSection.offsetLeft;
-scrollLeft = scrollerSection.scrollLeft;
+  isDragging = true;
+  startX = e.pageX - scrollerSection.offsetLeft;
+  scrollLeft = scrollerSection.scrollLeft;
+});
+
+document.addEventListener("touchstart", (e) => {
+  isDragging = true;
+  startX = e.touches[0].clientX - scrollerSection.offsetLeft;
+  scrollLeft = scrollerSection.scrollLeft;
 });
 
 document.addEventListener("mouseleave", () => {
-if (isDragging) {
-   isDragging = false;
-}
+  if (isDragging) {
+    isDragging = false;
+  }
 });
 
 document.addEventListener("mouseup", () => {
-if (isDragging) {
-   isDragging = false;
-}
+  if (isDragging) {
+    isDragging = false;
+  }
 });
 
 document.addEventListener("mousemove", (e) => {
-if (!isDragging) return;
-e.preventDefault();
-const x = e.pageX - scrollerSection.offsetLeft;
-const walk = (x - startX) * 1.5;
-scrollerSection.scrollLeft = scrollLeft - walk;
+  if (!isDragging) return;
+  e.preventDefault();
+  const x = e.pageX - scrollerSection.offsetLeft;
+  const walk = (x - startX) * 1.5;
+  scrollerSection.scrollLeft = scrollLeft - walk;
+});
+
+document.addEventListener("touchmove", (e) => {
+  if (!isDragging) return;
+  e.preventDefault();
+  const x = e.touches[0].clientX - scrollerSection.offsetLeft;
+  const walk = (x - startX) * 1.5;
+  scrollerSection.scrollLeft = scrollLeft - walk;
 });
