@@ -16,9 +16,9 @@ Front-end:-<br>
 
 
 ## Tasks pending (❌-> not yet completed  ✅-> task completed)
-•	Section clients: fix the whitespace property of the client description element ❌<br>
-•	Section <br>
-•	3<br>
+•	Section clients: fix the whitespace property of the client description element ✅<br>
+•	expand nav item section: fix the transition property, it should apply only for positions❌ <br>
+•	find white icons for dark screen mode❌<br>
 •	4<br><br>
 
 

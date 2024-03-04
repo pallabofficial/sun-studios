@@ -4,6 +4,8 @@
 
 body{
     background-color: #EFEAE3;
+    /* background-color: black; */
+    /* color: white; */
     font-family: "Roboto", sans-serif;
     /* overflow: hidden; */
 }
@@ -29,7 +31,8 @@ body{
 #banner{
     display: flex;
     flex-direction: column;
-    gap:10vh
+    gap:10vh;
+    border-bottom: 1px solid grey;
 }
 #title{
     display: flex;

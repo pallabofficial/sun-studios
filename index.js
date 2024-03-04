@@ -1,4 +1,60 @@
 
+
+
+// ----------------------------------------------------------screen mode (white/dark)--------------------------
+const body = document.querySelector("body");
+const navbar = document.querySelector("#navbar");
+const navMenu = document.querySelector("#nav-menu-div");
+const expandNavMenu = document.querySelector("#expand-nav-menu");
+const logoWhiteScreen = document.querySelector("#logo-white-screen");
+const logoDarkScreen = document.querySelector("#logo-dark-screen");
+
+function enableDarkMode(){
+  body.style.backgroundColor = "black";
+  body.style.color = "white";
+  navbar.style.backgroundColor = "black";
+  navbar.style.color = "white";
+  expandNavMenu.style.backgroundColor = "black";
+  expandNavMenu.style.color = "white";
+  navMenu.style.borderColor = "white";
+  logoWhiteScreen.style.opacity = 0;
+  logoDarkScreen.style.opacity = 1;
+}
+function enableWhiteMode(){
+  body.style.backgroundColor = "#EFEAE3";
+  body.style.color = "black";
+  navbar.style.backgroundColor = "#EFEAE3";
+  navbar.style.color = "black";
+  expandNavMenu.style.backgroundColor = "#EFEAE3";
+  expandNavMenu.style.color = "black";
+  navMenu.style.borderColor = "black";
+  logoWhiteScreen.style.opacity = 1;
+  logoDarkScreen.style.opacity = 0;
+}
+
+
+let screenMode = "white";
+const screenModeBtn = document.querySelector("#screen-mode-div");
+const sunIcon = document.querySelector("#sun-icon");
+const moonIcon = document.querySelector("#moon-icon");
+
+screenModeBtn.addEventListener("click", (event)=>{
+  if(screenMode==="white"){
+    sunIcon.style.opacity = 0;
+    moonIcon.style.opacity = 1;
+    enableDarkMode();
+    screenMode = "dark";
+  }
+  else{
+    sunIcon.style.opacity = 1;
+    moonIcon.style.opacity = 0;
+    enableWhiteMode();
+    screenMode = "white";
+  }
+})
+
+
+
 // ------------------------------------------------------navbar nav items------------------------------------------
 
 function expandNavItems(){
