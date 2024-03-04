@@ -8,8 +8,8 @@ const disclaimerOverlay = document.querySelector("#disclaimer-overlay");
 const disclaimerContinueBtn = document.querySelector("#disclaimer-continue-btn");
 
 disclaimerContinueBtn.addEventListener('click', (event)=>{
-  disclaimerBox.style.top = "-100%";
-  disclaimerOverlay.style.top = '-100%';
+  disclaimerBox.style.top = "-500%";
+  disclaimerOverlay.style.top = "-500%";
 })
 
 function showDisclaimerMessage(){ 
@@ -18,6 +18,7 @@ function showDisclaimerMessage(){
   disclaimerOverlay.style.top = "0";
 
 }
+showDisclaimerMessage();
 
 if (document.cookie.indexOf('disclaimerSeen=true') === -1) {
   showDisclaimerMessage();
