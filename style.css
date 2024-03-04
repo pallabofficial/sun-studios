@@ -648,6 +648,10 @@ video {
   margin-top: 10vw;
 }
 
+.mt-\[5vh\] {
+  margin-top: 5vh;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -828,12 +832,8 @@ video {
   width: 100%;
 }
 
-.w-\[40\%\] {
-  width: 40%;
-}
-
-.w-\[45\%\] {
-  width: 45%;
+.max-w-full {
+  max-width: 100%;
 }
 
 .transform {
@@ -1064,6 +1064,11 @@ video {
   padding-bottom: 5vw;
 }
 
+.px-\[-5vw\] {
+  padding-left: -5vw;
+  padding-right: -5vw;
+}
+
 .pb-\[5vh\] {
   padding-bottom: 5vh;
 }
@@ -1106,6 +1111,42 @@ video {
 
 .text-\[8vw\] {
   font-size: 8vw;
+}
+
+.text-\[19vw\] {
+  font-size: 19vw;
+}
+
+.text-\[18vw\] {
+  font-size: 18vw;
+}
+
+.text-\[18\.5vw\] {
+  font-size: 18.5vw;
+}
+
+.text-\[18\.3vw\] {
+  font-size: 18.3vw;
+}
+
+.text-\[18\.2vw\] {
+  font-size: 18.2vw;
+}
+
+.text-\[26vw\] {
+  font-size: 26vw;
+}
+
+.text-\[20vw\] {
+  font-size: 20vw;
+}
+
+.text-\[21vw\] {
+  font-size: 21vw;
+}
+
+.text-\[29vw\] {
+  font-size: 29vw;
 }
 
 .font-bold {
@@ -1154,6 +1195,14 @@ video {
 
 .leading-\[8vw\] {
   line-height: 8vw;
+}
+
+.leading-\[20vw\] {
+  line-height: 20vw;
+}
+
+.leading-\[20\.5vw\] {
+  line-height: 20.5vw;
 }
 
 .tracking-tighter {
