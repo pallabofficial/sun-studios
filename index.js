@@ -1,4 +1,9 @@
-
+let screenMode; //screen mode(white/dark)
+let flag; // navbar menu icon 
+const menuIconWhiteScreen = document.querySelector("#menu-icon-whiteScreen");
+const menuIconDarkScreen = document.querySelector("#menu-icon-darkScreen");
+const crossIconWhiteScreen = document.querySelector("#cross-icon-whiteScreen");
+const crossIconDarkScreen = document.querySelector("#cross-icon-darkScreen");
 
 
 // ----------------------------------------------------------screen mode (white/dark)--------------------------
@@ -41,6 +46,30 @@ function enableDarkMode(){
   rightArrowIconWhiteScreen.style.opacity = 0;
   rightArrowIconDarkScreen.style.opacity = 1;
   moreProjectsBtn.style.borderColor = "white";
+
+
+  if(flag===false){
+    menuIconWhiteScreen.style.opacity = 0;
+    crossIconWhiteScreen.style.opacity = 0;
+    menuIconDarkScreen.style.opacity = 1;
+    crossIconDarkScreen.style.opacity = 0;
+
+    menuIconWhiteScreen.style.transform = "scale(0)";
+    crossIconWhiteScreen.style.transform = "scale(0)";          
+    menuIconDarkScreen.style.transform = "scale(1)";
+    crossIconDarkScreen.style.transform = "scale(0)";
+  }
+  else{
+    menuIconWhiteScreen.style.opacity = 0;
+    crossIconWhiteScreen.style.opacity = 0;
+    menuIconDarkScreen.style.opacity = 0;
+    crossIconDarkScreen.style.opacity = 1;
+
+    menuIconWhiteScreen.style.transform = "scale(0)";
+    crossIconWhiteScreen.style.transform = "scale(0)";          
+    menuIconDarkScreen.style.transform = "scale(0)";
+    crossIconDarkScreen.style.transform = "scale(1)";
+  }
  
 }
 function enableWhiteMode(){
@@ -68,10 +97,33 @@ function enableWhiteMode(){
   rightArrowIconWhiteScreen.style.opacity = 1;
   rightArrowIconDarkScreen.style.opacity = 0;
   moreProjectsBtn.style.borderColor = "black";
+
+  if(flag===false){
+    menuIconWhiteScreen.style.opacity = 1;
+    crossIconWhiteScreen.style.opacity = 0;
+    menuIconDarkScreen.style.opacity = 0;
+    crossIconDarkScreen.style.opacity = 0;
+
+    menuIconWhiteScreen.style.transform = "scale(1)";
+    crossIconWhiteScreen.style.transform = "scale(0)";          
+    menuIconDarkScreen.style.transform = "scale(0)";
+    crossIconDarkScreen.style.transform = "scale(0)";
+  }
+  else{
+    menuIconWhiteScreen.style.opacity = 0;
+    crossIconWhiteScreen.style.opacity = 1;
+    menuIconDarkScreen.style.opacity = 0;
+    crossIconDarkScreen.style.opacity = 0;
+
+    menuIconWhiteScreen.style.transform = "scale(0)";
+    crossIconWhiteScreen.style.transform = "scale(1)";          
+    menuIconDarkScreen.style.transform = "scale(0)";
+    crossIconDarkScreen.style.transform = "scale(0)";
+  }
 }
 
 
-let screenMode = "white";
+screenMode = "white";
 const screenModeBtn = document.querySelector("#screen-mode-div");
 const sunIcon = document.querySelector("#sun-icon");
 const moonIcon = document.querySelector("#moon-icon");
@@ -100,28 +152,70 @@ function expandNavItems(){
     const navbar = document.querySelector("nav");
     const navItems = document.querySelector("#expand-nav-menu");
     const darkScreen = document.querySelector("#dark-screen");
-    const menuIcon = document.querySelector("#menu-icon");
-    const crossIcon = document.querySelector("#cross-icon");
 
-    let flag = false;
+  
+
+    flag = false;
     menu.addEventListener("click", (event)=>{
         if (flag===false){
-            navItems.style.top = "15vh";
-            darkScreen.style.top = "15vh";
-            menuIcon.style.opacity = 0;
-            crossIcon.style.opacity = 1;
-            menuIcon.style.transform = "scale(0)";
-            crossIcon.style.transform = "scale(1)";
-            flag=true;
-            darkScreen.style.transitionDuration = "1s"
+          navItems.style.top = "15vh";
+          darkScreen.style.top = "15vh";
+
+          if(screenMode==="white"){
+            menuIconWhiteScreen.style.opacity = 0;
+            crossIconWhiteScreen.style.opacity = 1;
+            menuIconDarkScreen.style.opacity = 0;
+            crossIconDarkScreen.style.opacity = 0;
+
+            menuIconWhiteScreen.style.transform = "scale(0)";
+            crossIconWhiteScreen.style.transform = "scale(1)";          
+            menuIconDarkScreen.style.transform = "scale(0)";
+            crossIconDarkScreen.style.transform = "scale(0)";
+          }
+          else{
+            menuIconWhiteScreen.style.opacity = 0;
+            crossIconWhiteScreen.style.opacity = 0;
+            menuIconDarkScreen.style.opacity = 0;
+            crossIconDarkScreen.style.opacity = 1;
+
+            menuIconWhiteScreen.style.transform = "scale(0)";
+            crossIconWhiteScreen.style.transform = "scale(0)";          
+            menuIconDarkScreen.style.transform = "scale(0)";
+            crossIconDarkScreen.style.transform = "scale(1)";
+          }
+          
+
+
+          flag=true;
+          darkScreen.style.transitionDuration = "1s"
         }
         else{
             navItems.style.top = "-100%";
             darkScreen.style.top = "-100%";
-            menuIcon.style.opacity = 1;
-            crossIcon.style.opacity = 0;
-            menuIcon.style.transform = "scale(1)";
-            crossIcon.style.transform = "scale(0)";
+            
+            if(screenMode==="white"){
+              menuIconWhiteScreen.style.opacity = 1;
+              crossIconWhiteScreen.style.opacity = 0;
+              menuIconDarkScreen.style.opacity = 0;
+              crossIconDarkScreen.style.opacity = 0;
+  
+              menuIconWhiteScreen.style.transform = "scale(1)";
+              crossIconWhiteScreen.style.transform = "scale(0)";          
+              menuIconDarkScreen.style.transform = "scale(0)";
+              crossIconDarkScreen.style.transform = "scale(0)";
+            }
+            else{
+              menuIconWhiteScreen.style.opacity = 0;
+              crossIconWhiteScreen.style.opacity = 0;
+              menuIconDarkScreen.style.opacity = 1;
+              crossIconDarkScreen.style.opacity = 0;
+  
+              menuIconWhiteScreen.style.transform = "scale(0)";
+              crossIconWhiteScreen.style.transform = "scale(0)";          
+              menuIconDarkScreen.style.transform = "scale(1)";
+              crossIconDarkScreen.style.transform = "scale(0)";
+            }
+
             flag=false;
             darkScreen.style.transitionDuration = "0.2s"
         }
