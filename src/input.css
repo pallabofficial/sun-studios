@@ -7,6 +7,12 @@ body{
     font-family: "Roboto", sans-serif;
     /* overflow: hidden; */
 }
+#menu-icon{
+    transition: all 0.3s linear;
+}
+#cross-icon{
+    transition: all 0.3s linear;
+}
 
 #expand-nav-menu{
     display:flex;

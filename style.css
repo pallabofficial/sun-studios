@@ -812,6 +812,10 @@ video {
   width: 100%;
 }
 
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -921,16 +925,6 @@ video {
   border-bottom-color: rgb(128 128 128 / var(--tw-border-opacity));
 }
 
-.border-b-\[white\] {
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-.border-b-white {
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
 .bg-\[\#504A45\] {
   --tw-bg-opacity: 1;
   background-color: rgb(80 74 69 / var(--tw-bg-opacity));
@@ -972,6 +966,11 @@ video {
 
 .to-\[\#fe8c0a\] {
   --tw-gradient-to: #fe8c0a var(--tw-gradient-to-position);
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .object-cover {
@@ -1144,6 +1143,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
 .opacity-60 {
   opacity: 0.6;
 }
@@ -1180,6 +1183,14 @@ body{
   background-color: #EFEAE3;
   font-family: "Roboto", sans-serif;
   /* overflow: hidden; */
+}
+
+#menu-icon{
+  transition: all 0.3s linear;
+}
+
+#cross-icon{
+  transition: all 0.3s linear;
 }
 
 #expand-nav-menu{
@@ -1355,59 +1366,6 @@ body{
 }
 
 /* ----------------------------------------------------------------client section------------------------------ */
-
-/* #client-section{
-   
-    padding-left:5vw;
-    margin-top: 20vw;
- }
- #client-card-div {
-   width: 100%;
-   white-space: nowrap;
-   overflow: hidden;
-   margin:5vh 0;
-   
-   
- }
- #clients-title-div {
-   display: flex;
-   align-items: center;
-   gap: 3vw;
-   font-size: 5vw;
- }
- #client-title {
-    font-size: 5vw;
- }
- #bullet-point {
-   width: 3vw;
-   height:3vw;
-   border-radius: 50%;
-   background-color: #fe330a;
- }
- .cards {
-   display: inline-block;
-   width: 60vw;
-   aspect-ratio: 3/4;
-   background-color: bisque;
-   margin-right: 20px;
- }
- .logo {
-   width: 100%;
-   height: 50%;
-
-   background-color: red;
- }
- .desc {
-   width: 100%;
-   height: 50%;
-
-   background-color: blue;
-   color: white;
-   white-space: normal;
-   overflow: hidden;
- } */
-
-/* -----------------------------------------------------------test------------------------------------------ */
 
 #client-section{
   display: flex;

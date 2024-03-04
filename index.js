@@ -4,19 +4,30 @@
 function expandNavItems(){
     const menu = document.querySelector("#nav-menu-div");
     const navbar = document.querySelector("nav");
-    const navItems = document.querySelector("#expand-nav-menu")
-    const darkScreen = document.querySelector("#dark-screen")
+    const navItems = document.querySelector("#expand-nav-menu");
+    const darkScreen = document.querySelector("#dark-screen");
+    const menuIcon = document.querySelector("#menu-icon");
+    const crossIcon = document.querySelector("#cross-icon");
+
     let flag = false;
     menu.addEventListener("click", (event)=>{
         if (flag===false){
             navItems.style.top = "15vh";
             darkScreen.style.top = "15vh";
+            menuIcon.style.opacity = 0;
+            crossIcon.style.opacity = 1;
+            menuIcon.style.transform = "scale(0)";
+            crossIcon.style.transform = "scale(1)";
             flag=true;
             darkScreen.style.transitionDuration = "1s"
         }
         else{
             navItems.style.top = "-100%";
             darkScreen.style.top = "-100%";
+            menuIcon.style.opacity = 1;
+            crossIcon.style.opacity = 0;
+            menuIcon.style.transform = "scale(1)";
+            crossIcon.style.transform = "scale(0)";
             flag=false;
             darkScreen.style.transitionDuration = "0.2s"
         }
