@@ -18,7 +18,7 @@ function showDisclaimerMessage(){
   disclaimerOverlay.style.top = "0";
 
 }
-showDisclaimerMessage();
+
 
 if (document.cookie.indexOf('disclaimerSeen=true') === -1) {
   showDisclaimerMessage();
