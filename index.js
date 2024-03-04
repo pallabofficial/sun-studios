@@ -10,21 +10,25 @@ const logoWhiteScreen = document.querySelector("#logo-white-screen");
 const logoDarkScreen = document.querySelector("#logo-dark-screen");
 
 function enableDarkMode(){
-  body.style.backgroundColor = "black";
+  
+  body.style.background = 'linear-gradient(to top right,#000000,#2d2c2c, #000000)';
   body.style.color = "white";
-  navbar.style.backgroundColor = "black";
+  navbar.style.background = 'linear-gradient(to top right, #000000,#363636, #000000)';
   navbar.style.color = "white";
-  expandNavMenu.style.backgroundColor = "black";
+  expandNavMenu.style.background = 'linear-gradient(to top right, #313030, #000000, #000000)';
   expandNavMenu.style.color = "white";
   navMenu.style.borderColor = "white";
   logoWhiteScreen.style.opacity = 0;
   logoDarkScreen.style.opacity = 1;
 }
 function enableWhiteMode(){
+  body.style.background = "none";
   body.style.backgroundColor = "#EFEAE3";
   body.style.color = "black";
+  navbar.style.background = 'none';
   navbar.style.backgroundColor = "#EFEAE3";
   navbar.style.color = "black";
+  expandNavMenu.style.background = "none";
   expandNavMenu.style.backgroundColor = "#EFEAE3";
   expandNavMenu.style.color = "black";
   navMenu.style.borderColor = "black";

@@ -4,11 +4,11 @@
 
 body{
     background-color: #EFEAE3;
-    /* background-color: black; */
-    /* color: white; */
+   
     font-family: "Roboto", sans-serif;
     /* overflow: hidden; */
 }
+
 #menu-icon{
     transition: all 0.3s linear;
 }
