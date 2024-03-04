@@ -8,6 +8,9 @@ const navMenu = document.querySelector("#nav-menu-div");
 const expandNavMenu = document.querySelector("#expand-nav-menu");
 const logoWhiteScreen = document.querySelector("#logo-white-screen");
 const logoDarkScreen = document.querySelector("#logo-dark-screen");
+const whiteModeClientLogo = document.querySelectorAll(".client-logo-white");
+const darkModeClientLogo = document.querySelectorAll(".client-logo-dark");
+const featuredProjectCategory = document.querySelectorAll(".project-category");
 
 function enableDarkMode(){
   
@@ -20,6 +23,16 @@ function enableDarkMode(){
   navMenu.style.borderColor = "white";
   logoWhiteScreen.style.opacity = 0;
   logoDarkScreen.style.opacity = 1;
+  whiteModeClientLogo.forEach((element)=>{
+    element.style.opacity = 0;
+  });
+  darkModeClientLogo.forEach((element)=>{
+    element.style.opacity = 1;
+  });
+  featuredProjectCategory.forEach((element)=>{
+    element.style.color = "rgb(159, 153, 153)";
+  });
+ 
 }
 function enableWhiteMode(){
   body.style.background = "none";
@@ -34,6 +47,15 @@ function enableWhiteMode(){
   navMenu.style.borderColor = "black";
   logoWhiteScreen.style.opacity = 1;
   logoDarkScreen.style.opacity = 0;
+  whiteModeClientLogo.forEach((element)=>{
+    element.style.opacity = 1;
+  });
+  darkModeClientLogo.forEach((element)=>{
+    element.style.opacity = 0;
+  });
+  featuredProjectCategory.forEach((element)=>{
+    element.style.color = "rgba(0, 0, 0, 0.347)";
+  });
 }
 
 

@@ -704,12 +704,12 @@ video {
   height: 35vh;
 }
 
-.h-\[50\%\] {
-  height: 50%;
+.h-\[3vw\] {
+  height: 3vw;
 }
 
-.h-\[50vh\] {
-  height: 50vh;
+.h-\[50\%\] {
+  height: 50%;
 }
 
 .h-\[55\%\] {
@@ -722,6 +722,10 @@ video {
 
 .h-\[60\%\] {
   height: 60%;
+}
+
+.h-\[60vh\] {
+  height: 60vh;
 }
 
 .h-\[70vh\] {
@@ -744,20 +748,8 @@ video {
   height: 80vh;
 }
 
-.h-\[90\%\] {
-  height: 90%;
-}
-
 .h-full {
   height: 100%;
-}
-
-.h-\[70\%\] {
-  height: 70%;
-}
-
-.h-\[120\%\] {
-  height: 120%;
 }
 
 .max-h-\[80vh\] {
@@ -772,12 +764,12 @@ video {
   width: 100%;
 }
 
-.w-\[12vw\] {
-  width: 12vw;
+.w-\[12\%\] {
+  width: 12%;
 }
 
-.w-\[15\%\] {
-  width: 15%;
+.w-\[12vw\] {
+  width: 12vw;
 }
 
 .w-\[1vw\] {
@@ -798,6 +790,10 @@ video {
 
 .w-\[30\%\] {
   width: 30%;
+}
+
+.w-\[3vw\] {
+  width: 3vw;
 }
 
 .w-\[50\%\] {
@@ -826,14 +822,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[12\%\] {
-  width: 12%;
-}
-
-.w-\[120\%\] {
-  width: 120%;
 }
 
 .transform {
@@ -886,6 +874,10 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
 }
 
 .whitespace-nowrap {
@@ -947,11 +939,6 @@ video {
   border-color: rgb(128 128 128 / var(--tw-border-opacity));
 }
 
-.border-black {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
 .border-b-\[grey\] {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(128 128 128 / var(--tw-border-opacity));
@@ -968,6 +955,11 @@ video {
 }
 
 .bg-\[\#FE330A\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 51 10 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#fe330a\] {
   --tw-bg-opacity: 1;
   background-color: rgb(254 51 10 / var(--tw-bg-opacity));
 }
@@ -1008,11 +1000,6 @@ video {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.object-fill {
-  -o-object-fit: fill;
-     object-fit: fill;
 }
 
 .object-center {
@@ -1401,35 +1388,6 @@ body{
 
 /* ----------------------------------------------------------------client section------------------------------ */
 
-#client-section{
-  display: flex;
-  flex-direction: column;
-  gap:5vw
-}
-
-#clients-title-div {
-  display: flex;
-  align-items: center;
-  gap: 3vw;
-  font-size: 5vw;
-}
-
-#client-title {
-  font-size: 5vw;
-}
-
-#bullet-point {
-  width: 3vw;
-  height:3vw;
-  border-radius: 50%;
-  background-color: #fe330a;
-}
-
-#client-card-div{
-  overflow-x: auto;
-  width:100%;
-}
-
 #client-card-div::-webkit-scrollbar{
   display: none;
 }
@@ -1438,7 +1396,7 @@ body{
   display:inline-block;
   width:70%;
   height:100%;
-  margin-right: 10vw;
+  /* margin-right: 10vw; */
   border-left: 1px solid grey;
   white-space: normal;
   overflow: hidden;
@@ -1448,12 +1406,15 @@ body{
 .client-logo-div{
   width:60%;
   height: 40%;
+  margin:0 auto;
 }
 
-.client-logo{
+.client-logo-white, .client-logo-dark{
   -o-object-fit:contain;
      object-fit:contain;
+  width:100%;
   height: 100%;
+  position:absolute;
 }
 
 .client-desc-div{
