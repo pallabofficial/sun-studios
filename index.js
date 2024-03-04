@@ -1,3 +1,38 @@
+
+// --------------------------------------------disclaimer message---------------------------------------------------
+
+
+const disclaimerBox = document.querySelector("#disclaimer-box");
+const disclaimerOverlay = document.querySelector("#disclaimer-overlay");
+
+const disclaimerContinueBtn = document.querySelector("#disclaimer-continue-btn");
+
+disclaimerContinueBtn.addEventListener('click', (event)=>{
+  disclaimerBox.style.top = "-100%";
+  disclaimerOverlay.style.top = '-100%';
+})
+
+function showDisclaimerMessage(){ 
+
+  disclaimerBox.style.top = "5vh";
+  disclaimerOverlay.style.top = "0";
+
+}
+
+if (document.cookie.indexOf('disclaimerSeen=true') === -1) {
+  showDisclaimerMessage();
+  
+  // Set a cookie to indicate the disclaimer has been seen with a 1-hour expiration
+  var expirationDate = new Date();
+  expirationDate.setHours(expirationDate.getHours() + 1);
+
+  document.cookie = 'disclaimerSeen=true; expires=' + expirationDate.toUTCString();
+}
+
+
+// ----------------------------------------------------------screen mode (white/dark)--------------------------
+
+
 let screenMode; //screen mode(white/dark)
 let flag; // navbar menu icon 
 const menuIconWhiteScreen = document.querySelector("#menu-icon-whiteScreen");
@@ -6,7 +41,7 @@ const crossIconWhiteScreen = document.querySelector("#cross-icon-whiteScreen");
 const crossIconDarkScreen = document.querySelector("#cross-icon-darkScreen");
 
 
-// ----------------------------------------------------------screen mode (white/dark)--------------------------
+
 const body = document.querySelector("body");
 const navbar = document.querySelector("#navbar");
 const navMenu = document.querySelector("#nav-menu-div");
