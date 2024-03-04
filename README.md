@@ -23,7 +23,7 @@ Front-end:-<br>
 
 
 ## My Learnings
-•	1<br>
+•	Difference between object-fit: cover, contain, fill<br>
 •	2<br>
 •	3<br>
 •	4<br>

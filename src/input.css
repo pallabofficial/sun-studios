@@ -166,56 +166,72 @@ body{
 }
 
 /* ----------------------------------------------------------------client section------------------------------ */
-#client-section{
-   
-    padding-left:5vw;
-    margin-top: 20vw;
- }
- #client-card-div {
-   width: 100%;
-   white-space: nowrap;
-   overflow: hidden;
-   margin:5vh 0;
-   
-   
- }
- #clients-title-div {
-   display: flex;
-   align-items: center;
-   gap: 3vw;
-   font-size: 5vw;
- }
- #client-title {
+
+ #client-section{
+    display: flex;
+    flex-direction: column;
+    gap:5vw
+    
+}
+#clients-title-div {
+    display: flex;
+    align-items: center;
+    gap: 3vw;
     font-size: 5vw;
- }
- #bullet-point {
-   width: 3vw;
-   height:3vw;
-   border-radius: 50%;
-   background-color: #fe330a;
- }
- .cards {
-   display: inline-block;
-   width: 60vw;
-   aspect-ratio: 3/4;
-   background-color: bisque;
-   margin-right: 20px;
- }
- .logo {
-   width: 100%;
-   height: 50%;
+  }
+  #client-title {
+     font-size: 5vw;
+  }
+  #bullet-point {
+    width: 3vw;
+    height:3vw;
+    border-radius: 50%;
+    background-color: #fe330a;
+  }
 
-   background-color: red;
- }
- .desc {
-   width: 100%;
-   height: 50%;
+#client-card-div{
+    overflow-x: auto;
+    width:100%;
+}
 
-   background-color: blue;
-   color: white;
-   white-space: normal;
-   overflow: hidden;
- }
+#client-card-div::-webkit-scrollbar{
+    display: none;
+}
+
+.client-card{
+    display:inline-block;
+    width:70%;
+    height:100%;
+    margin-right: 10vw;
+    border-left: 1px solid grey;
+    white-space: normal;
+    overflow: hidden;
+    padding:0 5vw;
+}
+
+.client-logo-div{
+    width:60%;
+    height: 40%;
+    
+}
+.client-logo{
+    object-fit:contain;
+    height: 100%;;
+}
+
+.client-desc-div{
+    width:100%;
+    height:60%;
+    padding:5vw 0;
+
+}
+.client-desc{
+    font-size: 4vw;
+
+}
+
+
+
 
 /* ---------------------------------------------------------------footer----------------------------------------- */
 
