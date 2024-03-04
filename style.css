@@ -752,6 +752,14 @@ video {
   height: 100%;
 }
 
+.h-\[70\%\] {
+  height: 70%;
+}
+
+.h-\[120\%\] {
+  height: 120%;
+}
+
 .max-h-\[80vh\] {
   max-height: 80vh;
 }
@@ -818,6 +826,14 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[12\%\] {
+  width: 12%;
+}
+
+.w-\[120\%\] {
+  width: 120%;
 }
 
 .transform {
@@ -1054,10 +1070,6 @@ video {
 
 .pt-\[10vw\] {
   padding-top: 10vw;
-}
-
-.pt-\[3vh\] {
-  padding-top: 3vh;
 }
 
 .text-left {
