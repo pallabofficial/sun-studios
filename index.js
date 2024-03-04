@@ -11,6 +11,11 @@ const logoDarkScreen = document.querySelector("#logo-dark-screen");
 const whiteModeClientLogo = document.querySelectorAll(".client-logo-white");
 const darkModeClientLogo = document.querySelectorAll(".client-logo-dark");
 const featuredProjectCategory = document.querySelectorAll(".project-category");
+const rightArrowIconWhiteScreen = document.querySelector("#right-arrow-icon-whiteScreen");
+const rightArrowIconDarkScreen = document.querySelector("#right-arrow-icon-darkScreen");
+const moreProjectsBtn = document.querySelector("#more-projects-btn");
+
+
 
 function enableDarkMode(){
   
@@ -32,6 +37,10 @@ function enableDarkMode(){
   featuredProjectCategory.forEach((element)=>{
     element.style.color = "rgb(159, 153, 153)";
   });
+
+  rightArrowIconWhiteScreen.style.opacity = 0;
+  rightArrowIconDarkScreen.style.opacity = 1;
+  moreProjectsBtn.style.borderColor = "white";
  
 }
 function enableWhiteMode(){
@@ -56,6 +65,9 @@ function enableWhiteMode(){
   featuredProjectCategory.forEach((element)=>{
     element.style.color = "rgba(0, 0, 0, 0.347)";
   });
+  rightArrowIconWhiteScreen.style.opacity = 1;
+  rightArrowIconDarkScreen.style.opacity = 0;
+  moreProjectsBtn.style.borderColor = "black";
 }
 
 
