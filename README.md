@@ -20,6 +20,8 @@ Front-end:-<br>
 •	expand nav item section: fix the transition property, it should apply only for positions❌ <br>
 •	find white icons for dark screen mode✅<br>
 •	fix the footer email form❌<br>
+•	add an instruction box in the featured section❌<br>
+•	smooth animation while moving to specific section❌<br>
 •	optimize javascript codes (avoid repitition)❌<br><br>
 
 

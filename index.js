@@ -1,4 +1,23 @@
 
+// -------------------------------smooth scrolling while navigating through anchor elements-------------------------------
+
+$(document).ready(function () {
+  $('a[href^="#"]').on("click", function (e) {
+    e.preventDefault();
+
+    var targetId = this.getAttribute("href").substring(1);
+    var targetSection = $("#" + targetId);
+
+    // Adjust the duration in milliseconds (e.g., 800 for 0.8 seconds)
+    $("html, body").animate(
+      {
+        scrollTop: targetSection.offset().top,
+      },
+      500
+    );
+  });
+});
+
 // --------------------------------------------disclaimer message---------------------------------------------------
 
 const mainBody = document.querySelector("#main")
