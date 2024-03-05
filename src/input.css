@@ -275,6 +275,6 @@ body{
 
 
 
-#disclaimer-box::-webkit-scrollbar{
+#disclaimer-msg-div::-webkit-scrollbar{
     display: none;
 }
