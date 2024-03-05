@@ -772,6 +772,10 @@ video {
   height: 3vw;
 }
 
+.h-\[5\.5vh\] {
+  height: 5.5vh;
+}
+
 .h-\[50\%\] {
   height: 50%;
 }
@@ -790,10 +794,6 @@ video {
 
 .h-\[60vh\] {
   height: 60vh;
-}
-
-.h-\[6vh\] {
-  height: 6vh;
 }
 
 .h-\[70vh\] {
@@ -820,8 +820,20 @@ video {
   height: 100%;
 }
 
-.h-\[5\.5vh\] {
-  height: 5.5vh;
+.h-\[5\.5vw\] {
+  height: 5.5vw;
+}
+
+.h-\[7\.5vw\] {
+  height: 7.5vw;
+}
+
+.h-\[8\.5vw\] {
+  height: 8.5vw;
+}
+
+.h-\[9\.5vw\] {
+  height: 9.5vw;
 }
 
 .max-h-\[80vh\] {
@@ -1202,10 +1214,6 @@ video {
 
 .text-\[20vw\] {
   font-size: 20vw;
-}
-
-.text-\[4\.5vw\] {
-  font-size: 4.5vw;
 }
 
 .text-\[4vw\] {
