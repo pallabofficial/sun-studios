@@ -640,6 +640,11 @@ video {
   margin: auto;
 }
 
+.my-\[2vw\] {
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
 .mb-\[10vh\] {
   margin-bottom: 10vh;
 }
@@ -658,6 +663,10 @@ video {
 
 .ml-\[5vw\] {
   margin-left: 5vw;
+}
+
+.mr-\[5vw\] {
+  margin-right: 5vw;
 }
 
 .mt-\[10vw\] {
@@ -696,8 +705,8 @@ video {
   height: 120vh;
 }
 
-.h-\[15vh\] {
-  height: 15vh;
+.h-\[2\.5vh\] {
+  height: 2.5vh;
 }
 
 .h-\[20\%\] {
@@ -722,10 +731,6 @@ video {
 
 .h-\[35\%\] {
   height: 35%;
-}
-
-.h-\[35vh\] {
-  height: 35vh;
 }
 
 .h-\[3vw\] {
@@ -800,20 +805,12 @@ video {
   width: 1vw;
 }
 
-.w-\[20\%\] {
-  width: 20%;
-}
-
 .w-\[200vw\] {
   width: 200vw;
 }
 
 .w-\[2vw\] {
   width: 2vw;
-}
-
-.w-\[30\%\] {
-  width: 30%;
 }
 
 .w-\[30vw\] {
@@ -1062,6 +1059,11 @@ video {
      object-fit: cover;
 }
 
+.object-fill {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
 .object-center {
   -o-object-position: center;
      object-position: center;
@@ -1069,11 +1071,6 @@ video {
 
 .p-\[2vw\] {
   padding: 2vw;
-}
-
-.px-\[2vw\] {
-  padding-left: 2vw;
-  padding-right: 2vw;
 }
 
 .px-\[4vw\] {
@@ -1290,6 +1287,17 @@ body{
 
 /* -------------------------------------------------------navbar--------------------------------------------- */
 
+/* ---------for small screens (phones)-------------- */
+
+#logo-div{
+  height:70%;
+  aspect-ratio: 1/1;
+}
+
+#menu-icon-div{
+  aspect-ratio: 1/1;
+}
+
 #menu-icon{
   transition: all 0.3s linear;
 }
@@ -1303,6 +1311,34 @@ body{
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
+}
+
+/* ---------for medium screens (tablets)-------------- */
+
+@media (min-width:481px) and (max-width:768px){
+  #navbar{
+    height: 20vh;
+  }
+
+  #nav-items-div{
+    width:60%;
+    height: 60%;
+  }
+
+  #logo-div{
+    height:80%;
+  }
+
+  #menu-icon-div{
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+    height:3.2vh;
+  }
+
+  #menu-text{
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+  }
 }
 
 /* --------------------------------------------------------banner------------------------------------------ */

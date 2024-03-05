@@ -9,6 +9,17 @@ body{
 
 /* -------------------------------------------------------navbar--------------------------------------------- */
 
+/* ---------for small screens (phones)-------------- */
+
+#logo-div{
+    height:70%;
+    aspect-ratio: 1/1;
+}
+
+#menu-icon-div{
+    aspect-ratio: 1/1;
+}
+
 #menu-icon{
     transition: all 0.3s linear;
 }
@@ -23,6 +34,31 @@ body{
     justify-content: space-between;
     align-items: flex-end;
 }
+
+/* ---------for medium screens (tablets)-------------- */
+
+@media (min-width:481px) and (max-width:768px){
+    #navbar{
+        height: 20vh;
+    }
+    #nav-items-div{
+        width:60%;
+        height: 60%;
+    }
+    #logo-div{
+        height:80%;        
+    }
+    #menu-icon-div{
+        margin-top: 1.5vw;
+        margin-bottom: 1.5vw;
+        height:3.2vh;
+    }
+    #menu-text{
+        margin-top: 1.5vw;
+        margin-bottom: 1.5vw;
+    }
+}
+
 
 /* --------------------------------------------------------banner------------------------------------------ */
 
