@@ -38,17 +38,16 @@ disclaimerContinueBtn.addEventListener('click', (event) => {
 
 
 
-// ----------------------------------------------------------screen mode (white/dark)--------------------------
+// ----------------------------------------screen mode (white/dark)-------------------------------------------
 
 
 let screenMode; //screen mode(white/dark)
-let flag; // navbar menu icon 
+let flag; // navbar menu icon (on click, it will expand the nav items)
+
 const menuIconWhiteScreen = document.querySelector("#menu-icon-whiteScreen");
 const menuIconDarkScreen = document.querySelector("#menu-icon-darkScreen");
 const crossIconWhiteScreen = document.querySelector("#cross-icon-whiteScreen");
 const crossIconDarkScreen = document.querySelector("#cross-icon-darkScreen");
-
-
 
 const body = document.querySelector("body");
 const navbar = document.querySelector("#navbar");
@@ -62,8 +61,6 @@ const featuredProjectCategory = document.querySelectorAll(".project-category");
 const rightArrowIconWhiteScreen = document.querySelector("#right-arrow-icon-whiteScreen");
 const rightArrowIconDarkScreen = document.querySelector("#right-arrow-icon-darkScreen");
 const moreProjectsBtn = document.querySelector("#more-projects-btn");
-
-
 
 function enableDarkMode(){
   
@@ -194,11 +191,9 @@ function expandNavItems(){
     const menu = document.querySelector("#nav-menu-div");
     const navbar = document.querySelector("nav");
     const navItems = document.querySelector("#expand-nav-menu");
-    const darkScreen = document.querySelector("#dark-screen");
+    const darkScreen = document.querySelector("#dark-screen");  
 
-  
-
-    flag = false;
+    flag = false;  //navmenu button is not clicked
     menu.addEventListener("click", (event)=>{
         if (flag===false){
           navItems.style.top = "15vh";
@@ -229,7 +224,7 @@ function expandNavItems(){
           
 
 
-          flag=true;
+          flag=true;   //navmenu button is  clicked
           darkScreen.style.transitionDuration = "1s"
         }
         else{
@@ -267,7 +262,7 @@ function expandNavItems(){
 }
 expandNavItems();
 
-// ---------------------------------------------fixed speed of all the videos------------------------------------
+// ---------------------------------------------fixed playback speed of all the videos------------------------------------
 
 const bannerVideo = document.querySelector("#banner-video");
 bannerVideo.playbackRate = 0.8;
@@ -276,7 +271,7 @@ const aboutVideo = document.querySelector("#about-video");
 aboutVideo.playbackRate = 0.5;
 
 
-// -------------------------------------------------------services-----------------------------------------------
+// ----------------------------------------------------- services-----------------------------------------------
 
 function selectServices(){
     const designSection = document.querySelector("#design");
