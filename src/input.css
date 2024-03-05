@@ -3,8 +3,12 @@
 @tailwind utilities;
 
 body{
-    background-color: #EFEAE3;   
+   
     font-family: "Roboto", sans-serif;    
+}
+#main{
+    /* display:none; */
+    background-color: #EFEAE3; 
 }
 
 /* -------------------------------------------------------navbar--------------------------------------------- */
@@ -266,4 +270,10 @@ body{
 .licenses{
     color:white;
     font-size: 3vw;
+}
+
+
+
+#disclaimer-box::-webkit-scrollbar{
+    display: none;
 }

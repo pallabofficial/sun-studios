@@ -1,20 +1,23 @@
 
 // --------------------------------------------disclaimer message---------------------------------------------------
 
-
+const mainBody = document.querySelector("#main")
 const disclaimerBox = document.querySelector("#disclaimer-box");
 const disclaimerOverlay = document.querySelector("#disclaimer-overlay");
 
 const disclaimerContinueBtn = document.querySelector("#disclaimer-continue-btn");
+const disclaimerExitBtn = document.querySelector("#disclaimer-exit-btn");
 
 function hideDisclaimer() {
   disclaimerBox.style.top = "-500vh";
   disclaimerOverlay.style.top = "-500vh";
+  mainBody.style.display = "block";
 }
 
 function showDisclaimerMessage() {
   disclaimerBox.style.top = "5vh";
   disclaimerOverlay.style.top = "0";
+  mainBody.style.display = "none";
 }
 
 
@@ -37,6 +40,16 @@ disclaimerContinueBtn.addEventListener('click', (event) => {
   hideDisclaimer();
 });
 
+disclaimerExitBtn.addEventListener('click', (event) => {
+  // close window when the button is clicked
+  if (window.close) {
+    window.close();
+  } else {
+    // Display a message if the browser does not support window.close()
+    alert("Sorry, your browser does not support closing the window programmatically. Try manually.");
+  }
+});
+
 
 
 // ----------------------------------------screen mode (white/dark)-------------------------------------------
@@ -50,7 +63,6 @@ const menuIconDarkScreen = document.querySelector("#menu-icon-darkScreen");
 const crossIconWhiteScreen = document.querySelector("#cross-icon-whiteScreen");
 const crossIconDarkScreen = document.querySelector("#cross-icon-darkScreen");
 
-const body = document.querySelector("body");
 const navbar = document.querySelector("#navbar");
 const navMenu = document.querySelector("#nav-menu-div");
 const expandNavMenu = document.querySelector("#expand-nav-menu");
@@ -65,8 +77,8 @@ const moreProjectsBtn = document.querySelector("#more-projects-btn");
 
 function enableDarkMode(){
   
-  body.style.background = 'linear-gradient(to top right,#000000,#2d2c2c, #000000)';
-  body.style.color = "white";
+  mainBody.style.background = 'linear-gradient(to top right,#000000,#2d2c2c, #000000)';
+  mainBody.style.color = "white";
   navbar.style.background = 'linear-gradient(to top right, #000000,#363636, #000000)';
   navbar.style.color = "white";
   expandNavMenu.style.background = 'linear-gradient(to top right, #313030, #000000, #000000)';
@@ -114,9 +126,9 @@ function enableDarkMode(){
  
 }
 function enableWhiteMode(){
-  body.style.background = "none";
-  body.style.backgroundColor = "#EFEAE3";
-  body.style.color = "black";
+  mainBody.style.background = "none";
+  mainBody.style.backgroundColor = "#EFEAE3";
+  mainBody.style.color = "black";
   navbar.style.background = 'none';
   navbar.style.backgroundColor = "#EFEAE3";
   navbar.style.color = "black";
