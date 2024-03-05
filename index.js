@@ -16,7 +16,7 @@ function showDisclaimerMessage() {
   disclaimerBox.style.top = "5vh";
   disclaimerOverlay.style.top = "0";
 }
-showDisclaimerMessage();
+
 
 // Check if the disclaimerSeen cookie is present
 if (document.cookie.indexOf('disclaimerSeen=true') === -1) {
@@ -29,7 +29,7 @@ if (document.cookie.indexOf('disclaimerSeen=true') === -1) {
   document.cookie = 'disclaimerSeen=true; expires=' + expirationDate.toUTCString();
 } else {
   // If the cookie is present, hide the disclaimer
-  // hideDisclaimer();
+  hideDisclaimer();
 }
 
 disclaimerContinueBtn.addEventListener('click', (event) => {
