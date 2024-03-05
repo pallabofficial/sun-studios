@@ -274,7 +274,49 @@ body{
 }
 
 
+/* ---------------------------------------------------disclaimer section------------------------------------- */
 
 #disclaimer-msg-div::-webkit-scrollbar{
     display: none;
+}
+
+/* ---------for large screens (PCs and laptops)-------------- */
+
+@media (min-width:769px) {
+
+    #disclaimer-msg-div{
+        max-height:75vh;
+    }
+
+    #disclaimer-btn-div{
+        height:10vh;
+    }
+
+    #disclaimer-title{
+        font-size: 3vw;
+        margin-bottom: 3vw;
+    }
+
+    #exclaimation-icon{
+        font-size: 2.5vw;
+    }
+
+    #disclaimer-msg{
+        font-size: 2vw;
+    }
+
+    #disclaimer-btn-div{
+        display:flex;
+        justify-content: center;
+        gap:2vw
+    }
+
+    #disclaimer-continue-btn, #disclaimer-exit-btn{
+        width: 25%;
+        height:4vw;
+        display: flex;
+        margin: 0;
+        font-size:2vw
+    }
+    
 }
