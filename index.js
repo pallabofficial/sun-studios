@@ -7,28 +7,35 @@ const disclaimerOverlay = document.querySelector("#disclaimer-overlay");
 
 const disclaimerContinueBtn = document.querySelector("#disclaimer-continue-btn");
 
-disclaimerContinueBtn.addEventListener('click', (event)=>{
-  disclaimerBox.style.top = "-500%";
-  disclaimerOverlay.style.top = "-500%";
-})
-
-function showDisclaimerMessage(){ 
-
-  disclaimerBox.style.top = "5vh";
-  disclaimerOverlay.style.top = "0";
-
+function hideDisclaimer() {
+  disclaimerBox.style.top = "-500vh";
+  disclaimerOverlay.style.top = "-500vh";
 }
 
+function showDisclaimerMessage() {
+  disclaimerBox.style.top = "5vh";
+  disclaimerOverlay.style.top = "0";
+}
 
+// Check if the disclaimerSeen cookie is present
 if (document.cookie.indexOf('disclaimerSeen=true') === -1) {
+  // If not present, show the disclaimer and set the cookie
   showDisclaimerMessage();
-  
-  // Set a cookie to indicate the disclaimer has been seen with a 1-hour expiration
+
   var expirationDate = new Date();
   expirationDate.setHours(expirationDate.getHours() + 1);
 
   document.cookie = 'disclaimerSeen=true; expires=' + expirationDate.toUTCString();
+} else {
+  // If the cookie is present, hide the disclaimer
+  hideDisclaimer();
 }
+
+disclaimerContinueBtn.addEventListener('click', (event) => {
+  // When the continue button is clicked, hide the disclaimer
+  hideDisclaimer();
+});
+
 
 
 // ----------------------------------------------------------screen mode (white/dark)--------------------------
