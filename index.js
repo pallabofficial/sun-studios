@@ -38,7 +38,7 @@ function showDisclaimerMessage() {
   disclaimerOverlay.style.top = "0";
   mainBody.style.display = "none";
 }
-
+showDisclaimerMessage();
 
 // Check if the disclaimerSeen cookie is present
 if (document.cookie.indexOf('disclaimerSeen=true') === -1) {
@@ -51,7 +51,7 @@ if (document.cookie.indexOf('disclaimerSeen=true') === -1) {
   document.cookie = 'disclaimerSeen=true; expires=' + expirationDate.toUTCString();
 } else {
   // If the cookie is present, hide the disclaimer
-  hideDisclaimer();
+  // hideDisclaimer();
 }
 
 disclaimerContinueBtn.addEventListener('click', (event) => {

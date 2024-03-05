@@ -22,6 +22,7 @@ Front-end:-<br>
 •	fix the footer email form❌<br>
 •	add an instruction box in the featured section❌<br>
 •	smooth animation while moving to specific section✅<br>
+•	create a contact section❌<br>
 •	optimize javascript codes (avoid repitition)❌<br><br>
 
 
