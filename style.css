@@ -620,20 +620,20 @@ video {
   z-index: 40;
 }
 
+.z-\[994\] {
+  z-index: 994;
+}
+
+.z-\[995\] {
+  z-index: 995;
+}
+
 .z-\[996\] {
   z-index: 996;
 }
 
 .z-\[997\] {
   z-index: 997;
-}
-
-.z-\[998\] {
-  z-index: 998;
-}
-
-.z-\[999\] {
-  z-index: 999;
 }
 
 .m-\[auto\] {
@@ -985,16 +985,16 @@ video {
   border-top-left-radius: 9999px;
 }
 
-.border {
-  border-width: 1px;
-}
-
 .border-\[0\.5px\] {
   border-width: 0.5px;
 }
 
 .border-\[1\.5px\] {
   border-width: 1.5px;
+}
+
+.border-\[2px\] {
+  border-width: 2px;
 }
 
 .border-b {
@@ -1329,6 +1329,164 @@ body{
   background-color: #EFEAE3;
 }
 
+/* -----------------------------------------------------------alert-box--------------------------------------- */
+
+#alert-box{
+  display:flex;
+  flex-direction: column;
+  gap:1vh;
+  width:90vw;
+  aspect-ratio: 1.9/1;
+  z-index: 999;
+  background-color: #FFFBFF;
+  border-radius: 5vw;
+  box-shadow: 1vw 1vw 2vw rgba(0,0,0, 0.5);
+  position:fixed;
+  top:-150vh;
+  left:5vw;
+  /* left:5vw; */
+  transform:translate(0,-50%);
+  padding:5vw;
+}
+
+#alert-msg-div{
+  width:100%;
+  height:60%;
+  font-size:4vw;
+  line-height: 6vw;
+  color:rgb(45, 46, 42)
+}
+
+#alert-btn-div{
+  width:100%;
+  height:40%;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#alert-btn{
+  background-color: #6D5192;
+  width:25%;
+  height:12vw;
+  border-radius: 6vw;
+  border:3px solid white;
+  position: relative;
+  color:white;
+  font-size: 4vw;
+  font-weight: 600;
+}
+
+#alert-btn::after{
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  border-radius: calc(6vw + 5px);
+  background-color: #6D5192;
+  z-index: -1;
+}
+
+/* -----------for large screens(PCs and laptops)------------ */
+
+@media (min-width:769px)and (max-height: 769px) {
+  #alert-box{
+    gap:1vw;
+    width:33vw;
+    height:32vh;
+    border-radius: 1.5vw;
+    box-shadow: 1vw 1vw 2vw rgba(0,0,0, 0.5);
+    left:50vw;
+    transform:translate(-50%,0);
+    padding:1.5vw;
+  }
+
+  #alert-msg-div{
+    width:100%;
+    height:60%;
+    font-size:1.2vw;
+    line-height: 2vw;
+  }
+
+  #alert-btn{
+    width:20%;
+    height:3vw;
+    border-radius: 6vw;
+    border:3px solid white;
+    font-size: 1vw;
+    font-weight: 600;
+  }
+
+  #alert-btn::after{
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    border-radius: calc(6vw + 5px);
+  }
+}
+
+#alert-box-overlay{
+  width:100%;
+  height:100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  position:fixed;
+  top:-150vh;
+  z-index: 998;
+}
+
+/* ---------------------------------------------------------disclaimer----------------------------------------- */
+
+#disclaimer-msg-div::-webkit-scrollbar{
+  display: none;
+}
+
+#disclaimer-continue-btn:hover {
+  background-color: #178a32;
+}
+
+#disclaimer-exit-btn:hover{
+  background-color: #9e191d
+}
+
+/* ---------for large screens (PCs and laptops)-------------- */
+
+@media (min-width:769px) {
+  #disclaimer-msg-div{
+    max-height:75vh;
+  }
+
+  #disclaimer-btn-div{
+    height:10vh;
+    display:flex;
+    justify-content: center;
+    gap:2vw
+  }
+
+  #disclaimer-title{
+    font-size: 3vw;
+    margin-bottom: 3vw;
+  }
+
+  #exclaimation-icon{
+    font-size: 2.5vw;
+  }
+
+  #disclaimer-msg{
+    font-size: 2vw;
+  }
+
+  #disclaimer-continue-btn, #disclaimer-exit-btn{
+    width: 25%;
+    height:4vw;
+    display: flex;
+    margin: 0;
+    font-size:2vw
+  }
+}
+
 /* -------------------------------------------------------navbar--------------------------------------------- */
 
 /* ---------for small screens (phones)-------------- */
@@ -1605,47 +1763,3 @@ body{
   font-size: 3vw;
 }
 
-/* ---------------------------------------------------disclaimer section------------------------------------- */
-
-#disclaimer-msg-div::-webkit-scrollbar{
-  display: none;
-}
-
-/* ---------for large screens (PCs and laptops)-------------- */
-
-@media (min-width:769px) {
-  #disclaimer-msg-div{
-    max-height:75vh;
-  }
-
-  #disclaimer-btn-div{
-    height:10vh;
-  }
-
-  #disclaimer-title{
-    font-size: 3vw;
-    margin-bottom: 3vw;
-  }
-
-  #exclaimation-icon{
-    font-size: 2.5vw;
-  }
-
-  #disclaimer-msg{
-    font-size: 2vw;
-  }
-
-  #disclaimer-btn-div{
-    display:flex;
-    justify-content: center;
-    gap:2vw
-  }
-
-  #disclaimer-continue-btn, #disclaimer-exit-btn{
-    width: 25%;
-    height:4vw;
-    display: flex;
-    margin: 0;
-    font-size:2vw
-  }
-}

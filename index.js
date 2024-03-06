@@ -1,3 +1,30 @@
+// -------------------------------------------------------alert box--------------------------------------
+
+let screenWidth= window.innerWidth;
+const alertBox = document.querySelector("#alert-box");
+const alertOverlay = document.querySelector("#alert-box-overlay");
+const closeAlertBtn = document.querySelector("#alert-btn");
+const alertMsg = document.querySelector("#alert-msg");
+
+
+function displayAlertBox(notification){
+    
+    if(screenWidth>769 && window.innerHeight<=screenWidth){
+        alertBox.style.top = "2vh";        
+    }
+    else{
+        alertBox.style.top = "50vh";        
+    }    
+    alertOverlay.style.top = 0;
+    alertMsg.innerText = notification;
+}
+
+
+closeAlertBtn.addEventListener("click",(event)=> {
+    alertBox.style.top="-150vh";
+    alertOverlay.style.top = "-150vh";
+})
+
 
 // -------------------------------smooth scrolling while navigating through anchor elements-------------------------------
 
@@ -28,8 +55,8 @@ const disclaimerContinueBtn = document.querySelector("#disclaimer-continue-btn")
 const disclaimerExitBtn = document.querySelector("#disclaimer-exit-btn");
 
 function hideDisclaimer() {
-  disclaimerBox.style.top = "-500vh";
-  disclaimerOverlay.style.top = "-500vh";
+  disclaimerBox.style.top = "-100vh";
+  disclaimerOverlay.style.top = "-100vh";
   mainBody.style.display = "block";
 }
 
@@ -38,7 +65,7 @@ function showDisclaimerMessage() {
   disclaimerOverlay.style.top = "0";
   mainBody.style.display = "none";
 }
-showDisclaimerMessage();
+// showDisclaimerMessage();       //check and test the disclaimer section
 
 // Check if the disclaimerSeen cookie is present
 if (document.cookie.indexOf('disclaimerSeen=true') === -1) {
@@ -51,7 +78,7 @@ if (document.cookie.indexOf('disclaimerSeen=true') === -1) {
   document.cookie = 'disclaimerSeen=true; expires=' + expirationDate.toUTCString();
 } else {
   // If the cookie is present, hide the disclaimer
-  // hideDisclaimer();
+  hideDisclaimer();
 }
 
 disclaimerContinueBtn.addEventListener('click', (event) => {
@@ -60,14 +87,12 @@ disclaimerContinueBtn.addEventListener('click', (event) => {
 });
 
 disclaimerExitBtn.addEventListener('click', (event) => {
-  // close window when the button is clicked
-  if (window.close) {
-    window.close();
-  } else {
-    // Display a message if the browser does not support window.close()
-    alert("Sorry, your browser does not support closing the window programmatically. Try manually.");
-  }
+    let msg = "Your browser security is not allowing to exit the website, kindly close the tab manually. Sorry for the inconvenience!!!";
+    displayAlertBox(msg);
+    window.close();  //if browser allows to close the window, it will closed without the above alert message.
 });
+
+
 
 
 
@@ -228,8 +253,8 @@ function expandNavItems(){
     flag = false;  //navmenu button is not clicked
     menu.addEventListener("click", (event)=>{
         if (flag===false){
-          navItems.style.top = "15vh";
-          darkScreen.style.top = "15vh";
+          navItems.style.top = "20vh";
+          darkScreen.style.top = "20vh";
 
           if(screenMode==="white"){
             menuIconWhiteScreen.style.opacity = 0;
@@ -369,4 +394,11 @@ function selectServices(){
 
 }
 selectServices();
+
+// -----------------------------------------more projects button functionality-------------------
+
+moreProjectsBtn.addEventListener("click", ()=>{
+ let message = "This button is designed just to make the website look realistic.The projects mentioned over here are fictional and not real entity."
+ displayAlertBox(message)
+})
 
