@@ -1,3 +1,5 @@
+const body = document.querySelector("body");
+const mainBody = document.querySelector("#main") //main content of the website
 // -------------------------------------------------------alert box--------------------------------------
 
 let screenWidth= window.innerWidth;
@@ -17,12 +19,14 @@ function displayAlertBox(notification){
     }    
     alertOverlay.style.top = 0;
     alertMsg.innerText = notification;
+    body.style.overflow = "hidden"
 }
 
 
 closeAlertBtn.addEventListener("click",(event)=> {
     alertBox.style.top="-150vh";
     alertOverlay.style.top = "-150vh";
+    body.style.overflow = ""
 })
 
 
@@ -47,7 +51,7 @@ $(document).ready(function () {
 
 // --------------------------------------------disclaimer message---------------------------------------------------
 
-const mainBody = document.querySelector("#main")
+
 const disclaimerBox = document.querySelector("#disclaimer-box");
 const disclaimerOverlay = document.querySelector("#disclaimer-overlay");
 
@@ -58,12 +62,14 @@ function hideDisclaimer() {
   disclaimerBox.style.top = "-100vh";
   disclaimerOverlay.style.top = "-100vh";
   mainBody.style.display = "block";
+  
 }
 
 function showDisclaimerMessage() {
   disclaimerBox.style.top = "5vh";
   disclaimerOverlay.style.top = "0";
   mainBody.style.display = "none";
+
 }
 // showDisclaimerMessage();       //check and test the disclaimer section
 
