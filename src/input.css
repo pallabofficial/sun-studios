@@ -136,6 +136,12 @@ body{
   background-color: #9e191d
 }
 
+
+@media (max-width:480px) {
+  #disclaimer-box{
+    max-height: 80vh;
+  }
+}
 /* ---------for large screens (PCs and laptops)-------------- */
 
 @media (min-width:769px) {
