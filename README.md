@@ -23,7 +23,8 @@ Front-end:-<br>
 •	add an instruction box in the featured section❌<br>
 •	smooth animation while moving to specific section✅<br>
 •	create a contact section❌<br>
-•	fix the not working of the exit website button in disclaimer box in browsers other than chrome❌<br>
+•	fix the not working of the exit website button in disclaimer box in browsers other than chrome⚠️(temporary fix)<br>
+•	change the hover effect of navitems while dark mode❌<br>
 •	optimize javascript codes (avoid repitition)❌<br><br>
 
 

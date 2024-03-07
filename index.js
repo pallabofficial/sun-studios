@@ -126,10 +126,15 @@ const rightArrowIconDarkScreen = document.querySelector("#right-arrow-icon-darkS
 const moreProjectsBtn = document.querySelector("#more-projects-btn");
 
 function enableDarkMode(){
-  
+  if(screenWidth>768 && window.innerHeight<=768){
+    navbar.style.backgroundColor = 'transparent';
+  }
+  else{
+    navbar.style.background = 'linear-gradient(to top right, #000000,#363636, #000000)';
+  }
   mainBody.style.background = 'linear-gradient(to top right,#000000,#2d2c2c, #000000)';
   mainBody.style.color = "white";
-  navbar.style.background = 'linear-gradient(to top right, #000000,#363636, #000000)';
+  
   navbar.style.color = "white";
   expandNavMenu.style.background = 'linear-gradient(to top right, #313030, #000000, #000000)';
   expandNavMenu.style.color = "white";
@@ -176,11 +181,17 @@ function enableDarkMode(){
  
 }
 function enableWhiteMode(){
+  if(screenWidth>768 && window.innerHeight<=768){
+    navbar.style.backgroundColor = 'transparent';
+  }
+  else{
+    navbar.style.backgroundColor = "#EFEAE3";
+  }
   mainBody.style.background = "none";
   mainBody.style.backgroundColor = "#EFEAE3";
   mainBody.style.color = "black";
   navbar.style.background = 'none';
-  navbar.style.backgroundColor = "#EFEAE3";
+  
   navbar.style.color = "black";
   expandNavMenu.style.background = "none";
   expandNavMenu.style.backgroundColor = "#EFEAE3";
@@ -227,7 +238,7 @@ function enableWhiteMode(){
 
 
 screenMode = "white";
-const screenModeBtn = document.querySelector("#screen-mode-div");
+const screenModeBtn = document.querySelector("#screen-mode-wrapper");
 const sunIcon = document.querySelector("#sun-icon");
 const moonIcon = document.querySelector("#moon-icon");
 
@@ -291,8 +302,8 @@ function expandNavItems(){
           darkScreen.style.transitionDuration = "1s"
         }
         else{
-            navItems.style.top = "-100%";
-            darkScreen.style.top = "-100%";
+            navItems.style.top = "-200%";
+            darkScreen.style.top = "-200%";
             
             if(screenMode==="white"){
               menuIconWhiteScreen.style.opacity = 1;

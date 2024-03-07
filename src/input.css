@@ -123,7 +123,9 @@ body{
 }
 
 /* ---------------------------------------------------------disclaimer----------------------------------------- */
-
+#disclaimer-box{
+  box-shadow: 1vw 1vw 1vw rgb(34, 33, 33);
+}
 #disclaimer-msg-div::-webkit-scrollbar{
   display: none;
 }
@@ -176,7 +178,19 @@ body{
 
 /* -------------------------------------------------------navbar--------------------------------------------- */
 
-/* ---------for small screens (phones)-------------- */
+#nav-items-wrapper{
+  min-height: fit-content;
+  min-width: fit-content;
+}
+#nav-menu-div{
+  display:flex;   
+                            
+}
+
+#nav-items-div{
+ display:none;
+ 
+}
 
 #logo-div{
   height:70%;
@@ -202,16 +216,94 @@ body{
   align-items: flex-end;
 }
 
-/* ---------for medium screens (tablets)-------------- */
+.nav-items{
+  padding: 2vh 2vw;
+  position: relative;
+  border:1px solid grey;
+  overflow: hidden;
+
+}
+.nav-items::after{
+  content: "";
+
+  background-color: black;
+  border-radius: 50%;
+  position:absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0%;
+  transform: translate(0, 101%);
+  transition: all 0.3s ease;
+  z-index: -1;
+  
+ 
+}
+.nav-items:hover{
+  color:white;
+}
+
+.nav-items:hover::after{
+  
+  transform: translate(0, 0);
+  border-radius: 0;
+}
+.nav-items-text{
+  font-size:1.5vw;
+}
+
+/* ----------------medium screens----------------------------------------------- */
 
 @media (min-width:481px) and (max-width:768px){
   #navbar{
       height: 20vh;
   }
-  #nav-items-div{
-      width:60%;
-      height: 60%;
+  #navItems-screenModeBtn-div{
+    gap:3vw;
   }
+ 
+  #logo-div{
+      height:80%;        
+  }
+  #screen-mode-wrapper{
+    height:45%;
+    width:12%;
+  }
+  #menu-icon-div{
+      margin-top: 0.5vw;
+      margin-bottom: 0.5vw;
+      height:3vh;
+      padding-top: 1vw;
+      padding-bottom: 1vw;
+  }
+  #menu-text{
+      margin-top: 0.5vw;
+      margin-bottom: 0.5vw;
+      font-size: 4vw;
+      padding-top: 1vw;
+      padding-bottom: 1vw;
+  }
+}
+
+/* ---------for large screens (PCs and laptops (ipads excluded))-------------- */
+
+@media (min-width:769px) and (max-height:769px){
+  #navbar{
+      height: 25vh;
+      background-color: transparent;
+      
+  }
+
+  #nav-menu-div{
+     display:none;       
+                           
+  }
+
+  #nav-items-div{
+    display:flex;
+ 
+  }
+
   #logo-div{
       height:80%;        
   }
@@ -225,6 +317,8 @@ body{
       margin-bottom: 1.5vw;
   }
 }
+
+
 
 /* --------------------------------------------------------banner------------------------------------------ */
 
