@@ -71,7 +71,7 @@ function showDisclaimerMessage() {
   mainBody.style.display = "none";
 
 }
-showDisclaimerMessage();       //check and test the disclaimer section
+// showDisclaimerMessage();       //check and test the disclaimer section
 
 // Check if the disclaimerSeen cookie is present
 if (document.cookie.indexOf('disclaimerSeen=true') === -1) {
@@ -84,7 +84,7 @@ if (document.cookie.indexOf('disclaimerSeen=true') === -1) {
   document.cookie = 'disclaimerSeen=true; expires=' + expirationDate.toUTCString();
 } else {
   // If the cookie is present, hide the disclaimer
-  // hideDisclaimer();
+  hideDisclaimer();
 }
 
 disclaimerContinueBtn.addEventListener('click', (event) => {
@@ -130,7 +130,7 @@ function enableDarkMode(){
     navbar.style.backgroundColor = 'transparent';
   }
   else{
-    navbar.style.background = 'linear-gradient(to top right, #000000,#363636, #000000)';
+    navbar.style.background = 'linear-gradient(to top right,#000000,#2d2c2c, #000000)';
   }
   mainBody.style.background = 'linear-gradient(to top right,#000000,#2d2c2c, #000000)';
   mainBody.style.color = "white";
@@ -185,12 +185,13 @@ function enableWhiteMode(){
     navbar.style.backgroundColor = 'transparent';
   }
   else{
+    navbar.style.background = 'none';
     navbar.style.backgroundColor = "#EFEAE3";
   }
   mainBody.style.background = "none";
   mainBody.style.backgroundColor = "#EFEAE3";
   mainBody.style.color = "black";
-  navbar.style.background = 'none';
+  
   
   navbar.style.color = "black";
   expandNavMenu.style.background = "none";
