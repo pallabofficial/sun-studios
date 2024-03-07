@@ -664,6 +664,11 @@ video {
   margin-bottom: 2vw;
 }
 
+.my-\[1\.5vw\] {
+  margin-top: 1.5vw;
+  margin-bottom: 1.5vw;
+}
+
 .mb-\[10vh\] {
   margin-bottom: 10vh;
 }
@@ -706,6 +711,14 @@ video {
 
 .mt-\[5vh\] {
   margin-top: 5vh;
+}
+
+.ml-\[3vw\] {
+  margin-left: 3vw;
+}
+
+.mr-\[3vw\] {
+  margin-right: 3vw;
 }
 
 .block {
@@ -820,6 +833,18 @@ video {
   height: 100%;
 }
 
+.h-\[40\%\] {
+  height: 40%;
+}
+
+.h-\[2vh\] {
+  height: 2vh;
+}
+
+.h-\[1\.8vh\] {
+  height: 1.8vh;
+}
+
 .max-h-\[70vh\] {
   max-height: 70vh;
 }
@@ -894,6 +919,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[10\%\] {
+  width: 10%;
 }
 
 .transform {
@@ -1080,11 +1109,6 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-\[blue\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 255 / var(--tw-bg-opacity));
-}
-
 .bg-gradient-to-tr {
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
 }
@@ -1230,6 +1254,10 @@ video {
 
 .text-\[8vw\] {
   font-size: 8vw;
+}
+
+.text-\[4\.5vw\] {
+  font-size: 4.5vw;
 }
 
 .font-bold {
