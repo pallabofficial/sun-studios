@@ -15,7 +15,7 @@ function displayAlertBox(notification){
         alertBox.style.top = "2vh";        
     }
     else{
-        alertBox.style.top = "50vh";        
+        alertBox.style.top = "40vh";        
     }    
     alertOverlay.style.top = 0;
     alertMsg.innerText = notification;
@@ -59,8 +59,8 @@ const disclaimerContinueBtn = document.querySelector("#disclaimer-continue-btn")
 const disclaimerExitBtn = document.querySelector("#disclaimer-exit-btn");
 
 function hideDisclaimer() {
-  disclaimerBox.style.top = "-100vh";
-  disclaimerOverlay.style.top = "-100vh";
+  disclaimerBox.style.top = "-500vh";
+  disclaimerOverlay.style.top = "-500vh";
   mainBody.style.display = "block";
   
 }
