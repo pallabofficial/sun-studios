@@ -27,6 +27,7 @@ Front-end:-<br>
 •	create a contact section❌<br>
 •	fix the not working of the exit website button in disclaimer box in browsers other than chrome⚠️(temporary fix)<br>
 •	change the hover effect of navitems while dark mode❌<br>
+•	change the arrow color of the more-projects button while hovered❌<br>
 •	optimize javascript codes (avoid repitition)❌<br><br>
 
 

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Sun Studios</title>
@@ -14,13 +14,13 @@
     <div id="main" class="w-[100%] overflow-hidden"> <!--acts as a wrapper of the entire body-->
 
 <!-- ----------------------------------------------------navbar--------------------------------------------------------- -->
-        <nav id="navbar" class=" relative w-full h-[20vh] flex justify-between items-center px-[5vw]  z-[995] bg-[#EFEAE3] mb-[7vh] text-[black]">
+        <nav id="navbar" class=" relative w-full h-[20vh] flex justify-between items-center px-[5vw] lg:px-[2.5vw] lg:pt-[1vw] z-[995] bg-[#EFEAE3]  text-[black] mb-[7vh] lg:mb-[8vw]">
             <div id="logo-div" class="  relative ">
                 <img id="logo-white-screen" class="absolute top-0 left-0 opacity-1 object-fill w-[100%] h-[100%]"  src="images/logo-white-screen.png" alt="logo..." loading="lazy">
                 <img id="logo-dark-screen" class="absolute top-0 left-0 opacity-0 object-fill w-[100%] h-[100%]"  src="images/logo-dark-screen.png" alt="logo..." loading="lazy">
             </div>
 
-            <div id="navItems-screenModeBtn-div" class="w-[60%] h-[50%]  flex justify-end items-center gap-[5vw] ">
+            <div id="navItems-screenModeBtn-div" class="w-[60%] h-[50%]  flex justify-end items-center gap-[5vw] lg:gap-[2vw] ">
                 
                 <div id="screen-mode-wrapper" class=" relative h-[40%] w-[10%] overflow-hidden  ">
                     
@@ -31,7 +31,7 @@
 
                 
                 <div id="nav-menu-div" class=" top-0 left-0  border-[black] border-[1.5px] rounded-full  justify-center gap-[2vw] items-center  " > 
-                    <div id="menu-icon-div" class="relative  h-[1.8vh] my-[1.5vw] ml-[3vw] flex items-center "> 
+                    <div id="menu-icon-div" class="relative flex items-center h-[1.8vh] my-[1.5vw] ml-[3vw] lg:h-[1vh] "> 
                         <img id="menu-icon-whiteScreen" class=" absolute opacity-1 object-contain w-full h-full" src="images/menu-icon-whiteScreen.png" alt="" loading="lazy"> 
                         <img id="cross-icon-whiteScreen" class=" absolute opacity-0 object-contain w-full h-full" src="images/cross-icon-whiteScreen.png" alt="" loading="lazy">
                         <img id="menu-icon-darkScreen" class=" absolute opacity-0 object-contain w-full h-full" src="images/menu-icon-darkScreen.png" alt="" loading="lazy"> 
@@ -41,9 +41,9 @@
                 </div>
 
                 <div id="nav-items-div" class=" justify-between gap-[1vw]">
-                    <div class="nav-items rounded-full  "><a href="#featured" class="nav-items-text ">WORK</a></div>
-                    <div class="nav-items rounded-full  "><a href="#about" class="nav-items-text ">ABOUT<a></div>
-                    <div class="nav-items rounded-full  "><a href="#" class="nav-items-text ">CONTACT</a></div>
+                    <div class="nav-items rounded-full  "><a href="#featured" class="nav-items-text ">Work</a></div>
+                    <div class="nav-items rounded-full  "><a href="#about" class="nav-items-text ">About</a></div>
+                    <div class="nav-items rounded-full  "><a href="#" class="nav-items-text ">Contact</a></div>
                 </div>
                  
                 
@@ -63,23 +63,25 @@
         
     
 <!-- ---------------------------------------------------banner------------------------------------------------- -->
-        <header id="header" class="min-h-full w-full flex-col justify-between items-center overflow-hidden">
-            <section id="banner" class="flex-col  pb-[5vh]   px-[5vw]">
-                <div id="title" class="flex-col  items-end text-[17vw] leading-[16vw] font-bold">
+        <header id="header" class="min-h-full w-full overflow-hidden flex-col justify-between items-center ">
+            <section id="banner" class=" flex-col pb-[5vh] w-[90vw]  mx-[auto] mb-[4vh] lg:mb-[5vw] lg:flex  lg:w-[92vw] ">
+                <div id="title" class="font-montserrat   font-bold text-[17vw] leading-[16vw] lg:text-[12.5vw] lg:leading-[10.5vw] lg:tracking-tighter  lg:w-[50%]">
                     <h1>SPACES</h1>
                     <h1>THAT</h1>
                     <h1>INSPIRE</h1>
                 </div>
-                <div id="tagline" class="w-[85%] text-left font-bold text-[6vw] leading-[6vw] ">
-                    <p>Sundown is a multi-disciplinary studio focused on creating unique, end-to-end experiences and environments.</p>
+                <div id="tagline" class=" inline-block  font-bold text-left  w-[85%]  text-[6vw] leading-[6vw] lg:w-[30%] lg:text-[2vw] lg:leading-[2.5vw] lg:mt-[55vh]">
+                    <p class="lg:text-[2.2vw] lg:leading-[2vw] lg:tracking-tighter">Sundown is a multi-disciplinary studio focused on creating unique, end-to-end experiences and environments.</p>
                 </div>
             </section>
-            <div id="vid-anim-wrapper" class="relative h-[80vh] w-full flex justify-center items-center px-[5vw]">
-                <section id="banner-video-div" class = "relative h-[70vh] w-full  rounded-[20px] overflow-hidden">  
+
+
+            <div id="vid-anim-wrapper" class="relative  px-[5vw] lg:px-[2.5vw] w-full flex justify-center items-center ">
+                <section id="banner-video-div" class = "relative    rounded-[20px] overflow-hidden">  
                     <video id="banner-video" autoplay loop muted src="videos/banner-video-largeScreen.mp4" class="absolute w-full h-full object-cover object-center z-40" loading="lazy"></video>
                     
                 </section>
-                <div id="animation-oval" class="z-10 filter blur-md absolute top-[-5vh] right-[-30vw] w-[50vh] h-[20vh] rounded-tl-full rounded-bl-full bg-gradient-to-tr from-[#FE330A]  to-[#fe530a]">
+                <div id="animation-oval" class="z-10 filter blur-md absolute top-[-5vh] right-[-30vw] w-[50vh] h-[20vh] lg:w-[50vw] lg:h-[20vw] rounded-tl-full rounded-bl-full bg-gradient-to-tr from-[#FE330A]  to-[#fe530a]">
                     
                 </div>
                 
@@ -89,9 +91,9 @@
 
 <!-- -------------------------------------------------------slider -------------------------------------------------------- -->
         
-        <section id="slider" class="w-full h-[30vh]  py-[5vh] overflow-hidden">
-            <div id="moving-text" class="m-[auto] w-[100%] h-[80%] whitespace-nowrap overflow-hidden" >
-                <div class="moving-text-div whitespace-nowrap">
+        <section id="slider" class="w-full overflow-hidden h-[30vh] lg:h-[80vh] py-[5vh] lg:py-[2.5vw]  ">
+            <div id="moving-text" class=" w-[100%] h-[80%] whitespace-nowrap overflow-hidden" >
+                <div class="moving-text-div whitespace-nowrap ">
                     <h1 class="slider-text">EXPERIENCES</h1>
                     <div class="slider-separator"></div>
                     <h1 class="slider-text">CONTENT</h1>
@@ -123,34 +125,34 @@
 
 <!-- -------------------------------------------------about section------------------------------------------ -->
         
-        <div id="about" class="relative px-[5vw] w-full h-[70vh] flex flex-col justify-between">
-            <h1 class="z-20 relative text-[8vw] font-semibold leading-[8vw] tracking-tighter">We are a group of design-driven, goal-focused creators, producers, and designers who believe that the details make all the difference.</h1>
+        <div id="about" class="relative px-[5vw] w-full h-[80vh] flex flex-col justify-between mb-[10vh] | lg:flex-row  lg:h-[95vh] lg:mb-[25vh]" >
+            <h1 class="z-20 relative text-[8vw] font-semibold leading-[8vw] tracking-tighter | lg:w-[70%] lg:text-[5vw] lg:leading-[6vw]">We are a group of design-driven, goal-focused creators, producers, and designers who believe that the details make all the difference.</h1>
             
-            <div id=" about-vid-div" class="w-[80%] h-[60%] flex flex-col justify-between items-start">
+            <div id=" about-vid-div" class="w-[80%]  h-[60%] flex flex-col justify-between items-start | lg:w-[25%] lg:h-[60vh] lg:justify-start lg:items-center lg:gap-[1vw] lg:mt-[40vh]">
                 <section id="about-video-div" class = " z-20 relative w-full h-[55%]  rounded-[5px] overflow-hidden ">  
                     <video id="about-video" autoplay loop muted src="videos/about-video-smallScreen.mp4" class="absolute h-full w-full object-cover" loading="lazy"></video>
                 </section>
                 
-                <p class="z-20 relative w-[100%] h-[35%] text-[4vw] leading-[4vw] tracking-tighter">We love to create, we love to solve, we love to collaborate, and we love to turn amazing ideas into reality. We’re here to partner with you through every step of the process and know that relationships are the most important things we build.</p>
+                <p class="z-20 relative w-[100%] h-[35%] text-[4vw] leading-[4vw] tracking-tighter | lg:text-[1.3vw] lg:leading-[2vw]">We love to create, we love to solve, we love to collaborate, and we love to turn amazing ideas into reality. We’re here to partner with you through every step of the process and know that relationships are the most important things we build.</p>
             </div>
-            <div id="about-anim" class="z-10 absolute top-[20%] right-[-10%] w-[70vw] h-[70vw] rounded-full  bg-gradient-to-tr from-[#FE330A] via-[#FE330A] to-[#fe8c0a] filter blur-md"></div>
+            <div id="about-anim" class="z-10 absolute rounded-full  bg-gradient-to-tr from-[#FE330A] via-[#FE330A] to-[#fe8c0a] filter blur-md top-[20%] right-[-10%] w-[70vw] h-[70vw] | lg:w-[70vh] lg:h-[70vh] lg:top-[50%] lg:right-[35%] "></div>
         </div>
 
 <!-- ----------------------------------------------------featured----------------------------------------------- -->
 
-        <div id="featured" class="w-full px-[5vw] flex flex-col mb-[10vh] ">
-            <div id="featured-title-div" class="w-full h-[10vh] flex  items-center gap-[1.5vw]" >
-                <div class="w-[2vw] h-[2vw] bg-[#FE330A] rounded-full"></div>
+        <div id="featured" class="w-full px-[5vw] flex flex-col mb-[10vh] relative z-20 | lg:px-[0vw] lg:mb-[20vh]">
+            <div id="featured-title-div" class="flex items-center w-full h-[10vh]  gap-[1.5vw] | lg:h-[10vh] lg:gap-[0.5vw] lg:px-[2.5vw]" >
+                <div class=" bg-[#FE330A] rounded-full w-[2vw] h-[2vw] | lg:w-[2vh] lg:h-[2vh]" ></div>
                 <h3>FEATURED PROJECTS</h3>
                 
             </div>
 
                                             <!----------card-1---------- -->
 
-            <div class="featured-card flex flex-col">
-                <div class="image-container  rounded-lg overflow-hidden"><img src="images/project-1-smallScreen.jpg" alt="" class="project-thumbnail" loading="lazy"></div>
+            <div id="project-1-card" class="featured-card ">
+                <div  class="image-container  rounded-lg "><img src="images/project-1-smallScreen.jpg" alt="" class="project-thumbnail" loading="lazy"></div>
+                <h1 class="project-title">THE VIVES</h1>                
                 <div class="project-details">
-                    <h1 class="project-title">THE VIVES</h1>
                     <h4 class="client-company">MAGICSTORE</h4>
                     <h4 class="project-category">showroom</h4>
                 </div>
@@ -158,10 +160,10 @@
                                             <!----------card-2---------- -->
                                             
 
-            <div class="featured-card flex flex-col">
-                <div class="image-container  rounded-lg overflow-hidden"><img src="images/project-2-smallScreen.jpg" alt="" class="project-thumbnail" loading="lazy"></div>
-                <div class="project-details">
-                    <h1 class="project-title">AI 12I03 </h1>
+            <div id="project-2-card" class="featured-card ">
+                <div  class="image-container  rounded-lg "><img src="images/project-2-smallScreen.jpg" alt="" class="project-thumbnail" loading="lazy"></div>
+                <h1 class="project-title">AI 12I03 </h1>
+                <div class="project-details">                    
                     <h4 class="client-company">CONVERSE</h4>
                     <h4 class="project-category">Experimental</h4>
                 </div>
@@ -169,10 +171,10 @@
 
                                                 <!----------card-3---------- -->
 
-            <div class="featured-card flex flex-col">
-                <div class="image-container rounded-lg overflow-hidden"><img src="images/project-3-smallScreen.jpg" alt="" class="project-thumbnail" loading="lazy"></div>
+            <div id="project-3-card" class="featured-card ">
+                <div  class="image-container rounded-lg "><img src="images/project-3-smallScreen.jpg" alt="" class="project-thumbnail" loading="lazy"></div>
+                <h1 class="project-title">GARLEN'S BOUTIQUE</h1>                
                 <div class="project-details">
-                    <h1 class="project-title">GARLEN'S BOUTIQUE</h1>
                     <h4 class="client-company">GARLEN</h4>
                     <h4 class="project-category">e-commerce</h4>
                 </div>
@@ -180,10 +182,10 @@
 
                                                 <!----------card-4------------>
 
-            <div class="featured-card flex flex-col">
-                <div class="image-container rounded-lg overflow-hidden"><img src="images/project-4-smallScreen.jpeg" alt="" class="project-thumbnail" loading="lazy"></div>
-                <div class="project-details">
-                    <h1 class="project-title">SANLEY ANTIQUES</h1>
+            <div id="project-4-card" class="featured-card ">
+                <div  class="image-container rounded-lg "><img src="images/project-4-smallScreen.jpeg" alt="" class="project-thumbnail" loading="lazy"></div>
+                <h1 class="project-title">SANLEY ANTIQUES</h1>
+                <div class="project-details">                    
                     <h4 class="client-company">AFTERSTAR</h4>
                     <h4 class="project-category">gallery</h4>
                 </div>
@@ -191,10 +193,10 @@
 
                                                 <!----------card-5---------- -->
 
-            <div class="featured-card flex flex-col">
-                <div class="image-container  rounded-lg overflow-hidden"><img src="images/project-5-smallScreen.jpg" alt="" class="project-thumbnail" loading="lazy"></div>
-                <div class="project-details">
-                    <h1 class="project-title">SNEAKER TAJ</h1>
+            <div id="project-5-card" class="featured-card ">
+                <div  class="image-container  rounded-lg "><img src="images/project-5-smallScreen.jpg" alt="" class="project-thumbnail" loading="lazy"></div>
+                <h1 class="project-title">SNEAKER TAJ</h1>
+                <div class="project-details">                    
                     <h4 class="client-company">NIKE</h4>
                     <h4 class="project-category">e-commerce</h4>
                 </div>
@@ -202,10 +204,10 @@
 
                                                 <!----------card-6---------- -->
 
-            <div class="featured-card flex flex-col">
-                <div class="image-container  rounded-lg overflow-hidden"><img src="images/project-6-smallScreen.jpg" alt="" class="project-thumbnail" loading="lazy"></div>
-                <div class="project-details">
-                    <h1 class="project-title">ATLAS EQUIPS</h1>
+            <div id="project-6-card" class="featured-card ">
+                <div  class="image-container  rounded-lg "><img src="images/project-6-smallScreen.jpg" alt="" class="project-thumbnail" loading="lazy"></div>
+                <h1 class="project-title">ATLAS EQUIPS</h1>
+                <div class="project-details">                    
                     <h4 class="client-company">BOSE</h4>
                     <h4 class="project-category">online store</h4>
                 </div>
@@ -213,48 +215,62 @@
 
                                                 <!----------card-7---------- -->
 
-            <div class="relative featured-card flex flex-col">
-                <div class="image-container rounded-lg overflow-hidden"><img src="images/project-7-smallScreen.jpg" alt="" class="project-thumbnail" loading="lazy"></div>
-                <div class="project-details">
-                    <h1 class="project-title">SOHO 2023</h1>
+            <div id="project-7-card" class=" featured-card ">
+                <div  class="image-container rounded-lg "><img src="images/project-7-smallScreen.jpg" alt="" class="project-thumbnail" loading="lazy"></div>
+                <h1 class="project-title">SOHO 2023</h1>
+                <div class="project-details" id="project-7-details">                    
                     <h4 class="client-company">THE DREAM COMPANY</h4>
                     <h4 class="project-category">blog</h4>
-                    <div id="more-projects-btn" class="absolute bottom-0 w-[50%] h-[5vh] rounded-full border-[1.5px] border-black  px-[4vw] flex items-center">
-                        All Projects 
-                        <div id="right-arrow-div" class="relative inline-block w-[13vw] h-[7vw]  ">
-                            <img src="images/rightArrow-icon-whiteScreen.png" alt="" class="absolute opacity-1 w-full h-full object-contain " id="right-arrow-icon-whiteScreen" loading="lazy">
-                            <img src="images/rightArrow-icon-darkScreen.png" alt="" class="absolute opacity-0 w-full h-full object-contain " id="right-arrow-icon-darkScreen" loading="lazy">
-                        </div>
-                        
-                    </div>
+                   
                 </div>
             
             </div>
+                                                 <!----all projects button------>
+                                                
+            <div id="more-projects-btn-div" class="| lg:px-[2.5vw] lg:py-[2.5vw]">                           
+                <div id="more-projects-btn" class=" relative overflow-hidden  rounded-full border-[1.5px] border-black  px-[4vw] flex items-center w-[50%] h-[5vh] | lg:w-[14%] lg:h-[7vh] lg:px-[1.5vw]">
+                    All Projects 
+                    <div id="right-arrow-div" class="relative inline-block w-[13vw] h-[7vw] | lg:w-[3vw] lg:h-[2vw] ">
+                        <img src="images/rightArrow-icon-whiteScreen.png" alt="" class="absolute opacity-1 w-full h-full object-contain " id="right-arrow-icon-whiteScreen" loading="lazy">
+                        <img src="images/rightArrow-icon-darkScreen.png" alt="" class="absolute opacity-0 w-full h-full object-contain " id="right-arrow-icon-darkScreen" loading="lazy">
+                    </div>            
+                </div>
+            </div>   
+
+
         </div>
 
 <!-- --------------------------------------------------services---------------------------------------------------- -->
 
-        <div id="services-main-wrapper" class="w-full h-[120vh] px-[5vw] ">
-            <div id="services" class="w-full h-[100%]  flex flex-col rounded-lg bg-black overflow-hidden relative">
-                <div id="services-categories"class="w-full  px-[5vw] py-[10vw] flex flex-col justify-start">
-                    <div id="design"class="w-[100%] flex gap-[3vw] text-[white] ">
-                        <div id="bar-1" class="h-[100%] w-[1vw] bg-[#FE330A] ml-[-1vw]"></div>
-                        <h1 id="design-title" class=" text-[15vw] leading-[15vw] font-bold ">Design</h1></div>
-                    <div id="project"class="w-[100%] flex gap-[3vw] text-[#504A45] ">
-                        <div id="bar-2" class="h-[100%] w-[1vw] bg-[#504A45]"></div>
-                        <h1 id="project-title" class=" text-[15vw] leading-[15vw] font-bold ">Project</h1></div>
-                    <div id="execution"class="w-[100%] flex gap-[3vw] text-[#504A45] ">
-                        <div id="bar-3" class="h-[100%] w-[1vw] bg-[#504A45]"></div>
-                        <h1 id="execution-title" class=" text-[15vw] leading-[15vw] font-bold ">Execution</h1></div>
+        <div id="services-main-wrapper" class="w-full h-[120vh] px-[5vw] | lg:px-[2.5vw] ">
+            <div id="services" class="w-full h-[100%]  flex flex-col rounded-lg bg-black overflow-hidden relative | lg:flex-row">
+                <div id="categories-details-div" class="w-full h-[50%] | lg:w-[50%] lg:h-full">
+                    <div id="services-categories-div"class="w-full h-[60%]  px-[5vw] py-[10vw] flex flex-col justify-start relative | lg:px-[0] lg:pl-[10vw] ">
+                       
+                        <div id="design"class="services-categories  text-[white] ">
+                            <div id="bar-1" class="services-bar bg-[#FE330A]  ml-[-1vw] lg:ml-[0]"></div>
+                            <h1 id="design-title" class="service-title">Execution</h1>
+                        </div>
+                        <div id="project"class="services-categories text-[#504A45]">
+                            <div id="bar-2" class="services-bar bg-[#504A45]"></div>
+                            <h1 id="project-title" class="service-title">Project</h1>
+                        </div>
+                        <div id="execution"class="services-categories text-[#504A45]">
+                            <div id="bar-3" class="services-bar bg-[#504A45]"></div>
+                            <h1 id="execution-title" class="service-title">Execution</h1>
+                        </div>
+                    </div>
+                    <div id="services-details-div"class="w-full h-[40%] px-[5vw] py-[10vw] relative  ">
+                        <div id="services-details-1" class="service-details-div  "><p class="service-details ">Our team works with our clients to refine an idea and concept into an executable design. We create a final design that encompasses the brand narrative to bring stories to life and provide end-to-end design solutions from concept, design, and architectural drawings to 3D renderings.</p></div>
+                        <div id="services-details-2" class="service-details-div  "><p class="service-details">Once we have a design, our production team takes the lead in bringing it to life. We manage all stages of the project, from build specifications and technical drawings to site surveys, vendor management, and 2D & 3D production. We have an extensive network of partners to meet each unique design and project need.</p></div>
+                        <div id="services-details-3" class="service-details-div  "><p class="service-details">We’re with you every step of the way, from the project initiation to launch day. Our production and design teams are onsite to direct and guide the process down to the last point of completion, ensuring success across the built space and experience.</p></div>
+                    </div>
                 </div>
-                <div id="services-details"class="w-full h-[20%] px-[5vw] py-[10vw] relative">
-                    <div id="services-details-1" class="absolute top-0 left-0 px-[5vw]  w-[100%] h-[100%] "><p class="text-[white] text-[4vw] leading-[5vw] ">Our team works with our clients to refine an idea and concept into an executable design. We create a final design that encompasses the brand narrative to bring stories to life and provide end-to-end design solutions from concept, design, and architectural drawings to 3D renderings.</p></div>
-                    <div id="services-details-2" class="absolute top-0 left-0 px-[5vw]  w-[100%] h-[100%] "><p class="text-[white] text-[4vw] leading-[5vw]">Once we have a design, our production team takes the lead in bringing it to life. We manage all stages of the project, from build specifications and technical drawings to site surveys, vendor management, and 2D & 3D production. We have an extensive network of partners to meet each unique design and project need.</p></div>
-                    <div id="services-details-3" class="absolute top-0 left-0 px-[5vw]  w-[100%] h-[100%] "><p class="text-[white] text-[4vw] leading-[5vw]">We’re with you every step of the way, from the project initiation to launch day. Our production and design teams are onsite to direct and guide the process down to the last point of completion, ensuring success across the built space and experience.</p></div>
-                </div>
-                <div id="services-img-1"class="absolute bottom-0 left-0 w-full h-[50%]   rounded-lg overflow-hidden"><img src="images/services-execution-img-smallScreen.jpg"class="ervices-img object-cover w-[100%] h-[100%]" alt="" loading="lazy"></div>
-                <div id="services-img-2"class="absolute bottom-0 left-0 w-full h-[50%]   rounded-lg overflow-hidden"><img src="images/services-project-img-smallScreen.jpg"class="ervices-img object-cover w-[100%] h-[100%]" alt="" loading="lazy"></div>
-                <div id="services-img-3"class="absolute bottom-0 left-0 w-full h-[50%]   rounded-lg overflow-hidden"><img src="images/services-design-img-midScreen.jpg"class="ervices-img object-cover w-[100%] h-[100%]" alt="" loading="lazy"></div>
+
+
+                <div id="services-img-1"class="service-image-div"><img src="images/services-execution-img-smallScreen.jpg"class="ervices-img object-cover w-[100%] h-[100%] " alt="" loading="lazy"></div>
+                <div id="services-img-2"class="service-image-div"><img src="images/services-project-img-smallScreen.jpg"class="ervices-img object-cover w-[100%] h-[100%] " alt="" loading="lazy"></div>
+                <div id="services-img-3"class="service-image-div"><img src="images/services-design-img-midScreen.jpg"class="ervices-img object-cover w-[100%] h-[100%]"  alt="" loading="lazy"></div>
             </div>  
             
         </div>

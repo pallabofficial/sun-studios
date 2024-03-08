@@ -15,7 +15,7 @@ function displayAlertBox(notification){
         alertBox.style.top = "2vh";        
     }
     else{
-        alertBox.style.top = "40vh";        
+        alertBox.style.top = "45vh";        
     }    
     alertOverlay.style.top = 0;
     alertMsg.innerText = notification;
@@ -346,6 +346,35 @@ const aboutVideo = document.querySelector("#about-video");
 aboutVideo.playbackRate = 0.5;
 
 
+
+// ------------------------------------------------featured section (large screens)-------------------------
+
+const projectCards = document.querySelectorAll(".featured-card");
+const projectImages = document.querySelectorAll(".image-container");
+
+if(screenWidth>=769 && window.innerHeight<=769){
+  projectCards.forEach((card, index) => {
+    card.addEventListener("mouseover", () => {
+      card.style.backgroundColor = "#FF9831";
+      let correspondingImage = projectImages[index];
+      correspondingImage.style.display = "inline";
+      correspondingImage.style.opacity = 1;
+
+    });
+    card.addEventListener("mouseout", () => {
+      card.style.backgroundColor = "transparent";
+      let correspondingImage = projectImages[index];
+      correspondingImage.style.display = "none";
+      correspondingImage.style.opacity = 0;
+    });
+  });
+}
+
+
+
+
+
+
 // ----------------------------------------------------- services-----------------------------------------------
 
 function selectServices(){
@@ -369,11 +398,15 @@ function selectServices(){
     const setActive = (section, bar, details, img) => {
         section.style.color = "white";    
 
-        bar.style.marginLeft = "-1vw";
+        
         bar.style.backgroundColor = "#FE330A";
 
         details.style.visibility = "visible";
         img.style.visibility = "visible";
+        if(screenWidth<769){
+          bar.style.marginLeft = "-1vw";
+        }
+        
     };
 
     // Reset styles for all sections
