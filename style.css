@@ -768,10 +768,6 @@ video {
   height: 35%;
 }
 
-.h-\[3vw\] {
-  height: 3vw;
-}
-
 .h-\[40\%\] {
   height: 40%;
 }
@@ -782,10 +778,6 @@ video {
 
 .h-\[55\%\] {
   height: 55%;
-}
-
-.h-\[5vh\] {
-  height: 5vh;
 }
 
 .h-\[60\%\] {
@@ -854,14 +846,6 @@ video {
 
 .w-\[2vw\] {
   width: 2vw;
-}
-
-.w-\[3vw\] {
-  width: 3vw;
-}
-
-.w-\[50\%\] {
-  width: 50%;
 }
 
 .w-\[50vh\] {
@@ -942,6 +926,10 @@ video {
 
 .gap-\[3vw\] {
   gap: 3vw;
+}
+
+.gap-\[5vh\] {
+  gap: 5vh;
 }
 
 .gap-\[5vw\] {
@@ -1062,11 +1050,6 @@ video {
   background-color: rgb(254 51 10 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#fe330a\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 51 10 / var(--tw-bg-opacity));
-}
-
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -1159,6 +1142,21 @@ video {
   padding-bottom: 5vw;
 }
 
+.py-\[3vw\] {
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+}
+
+.px-\[3vw\] {
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+.py-\[2\.5vw\] {
+  padding-top: 2.5vw;
+  padding-bottom: 2.5vw;
+}
+
 .pb-\[4vh\] {
   padding-bottom: 4vh;
 }
@@ -1171,8 +1169,8 @@ video {
   padding-left: 5vw;
 }
 
-.pt-\[10vw\] {
-  padding-top: 10vw;
+.pt-\[5vw\] {
+  padding-top: 5vw;
 }
 
 .text-left {
@@ -1195,8 +1193,8 @@ video {
   font-size: 17vw;
 }
 
-.text-\[20vw\] {
-  font-size: 20vw;
+.text-\[3vw\] {
+  font-size: 3vw;
 }
 
 .text-\[4\.5vw\] {
@@ -1821,6 +1819,7 @@ body{
   width:100%;
   height:73%;
   border-radius: 25px;
+  margin-bottom: 2vh;
 }
 
 .project-thumbnail{
@@ -1862,6 +1861,13 @@ body{
   line-height: 4vw;
 }
 
+#more-projects-btn{
+  max-width:-moz-max-content;
+  max-width:max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
+}
+
 /* ---------------------------------for large screens------------------------------ */
 
 @media (min-width:769px){
@@ -1879,6 +1885,7 @@ body{
   .image-container{
     width:25vw;
     height:75vh;
+    margin-bottom: 0;
     position: fixed;
     top:50%;
     left:50%;
@@ -2093,7 +2100,46 @@ body{
   font-size: 4vw;
 }
 
+/* ----------------------------for large screens------------------------------ */
+
+@media(min-width:769px){
+  .client-card{
+    width:25%;
+    height:100%;
+    padding:0 5vw;
+  }
+
+  .client-logo-div{
+    width:60%;
+    height: 40%;
+    margin:0 auto;
+  }
+
+  .client-logo-white, .client-logo-dark{
+    -o-object-fit:contain;
+       object-fit:contain;
+    width:100%;
+    height: 100%;
+    position:absolute;
+  }
+
+  .client-desc-div{
+    width:100%;
+    height:60%;
+    padding:1vw 0;
+  }
+
+  .client-desc{
+    font-size: 1.2vw;
+  }
+}
+
 /* ----------------------------------------------------------footer----------------------------------------- */
+
+#company-name-div{
+  min-height: -moz-max-content;
+  min-height: max-content;
+}
 
 #footer-animation{
   animation: footer-anim 3s linear  infinite alternate;
@@ -2103,11 +2149,6 @@ body{
   from{
     transform:translate(-10vw,5vw) skew(20deg,-20deg);
   }
-}
-
-.licenses{
-  color:white;
-  font-size: 3vw;
 }
 
 @media (min-width: 769px) {
@@ -2137,6 +2178,10 @@ body{
 
   .lg\:ml-\[0\] {
     margin-left: 0;
+  }
+
+  .lg\:mt-\[2vw\] {
+    margin-top: 2vw;
   }
 
   .lg\:mt-\[40vh\] {
@@ -2179,10 +2224,6 @@ body{
     height: 70vh;
   }
 
-  .lg\:h-\[7vh\] {
-    height: 7vh;
-  }
-
   .lg\:h-\[80vh\] {
     height: 80vh;
   }
@@ -2195,8 +2236,8 @@ body{
     height: 100%;
   }
 
-  .lg\:w-\[14\%\] {
-    width: 14%;
+  .lg\:max-h-\[200vh\] {
+    max-height: 200vh;
   }
 
   .lg\:w-\[25\%\] {
@@ -2247,8 +2288,8 @@ body{
     justify-content: flex-start;
   }
 
-  .lg\:gap-\[0\.5vw\] {
-    gap: 0.5vw;
+  .lg\:gap-\[0vw\] {
+    gap: 0vw;
   }
 
   .lg\:gap-\[1vw\] {
@@ -2269,14 +2310,19 @@ body{
     padding-right: 0vw;
   }
 
-  .lg\:px-\[1\.5vw\] {
-    padding-left: 1.5vw;
-    padding-right: 1.5vw;
-  }
-
   .lg\:px-\[2\.5vw\] {
     padding-left: 2.5vw;
     padding-right: 2.5vw;
+  }
+
+  .lg\:px-\[5vw\] {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .lg\:py-\[1vw\] {
+    padding-top: 1vw;
+    padding-bottom: 1vw;
   }
 
   .lg\:py-\[2\.5vw\] {
@@ -2284,8 +2330,46 @@ body{
     padding-bottom: 2.5vw;
   }
 
+  .lg\:py-\[2vw\] {
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+  }
+
+  .lg\:py-\[5vw\] {
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+  }
+
+  .lg\:px-\[2vw\] {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+  .lg\:py-\[1\.5vw\] {
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+  }
+
+  .lg\:py-\[1\.2vw\] {
+    padding-top: 1.2vw;
+    padding-bottom: 1.2vw;
+  }
+
+  .lg\:px-\[1\.5vw\] {
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+  }
+
   .lg\:pl-\[10vw\] {
     padding-left: 10vw;
+  }
+
+  .lg\:pl-\[2\.5vw\] {
+    padding-left: 2.5vw;
+  }
+
+  .lg\:pt-\[0\.1vw\] {
+    padding-top: 0.1vw;
   }
 
   .lg\:pt-\[1vw\] {
@@ -2296,12 +2380,20 @@ body{
     font-size: 1.3vw;
   }
 
+  .lg\:text-\[1\.5vw\] {
+    font-size: 1.5vw;
+  }
+
   .lg\:text-\[12\.5vw\] {
     font-size: 12.5vw;
   }
 
   .lg\:text-\[2\.2vw\] {
     font-size: 2.2vw;
+  }
+
+  .lg\:text-\[2\.5vw\] {
+    font-size: 2.5vw;
   }
 
   .lg\:text-\[2vw\] {
@@ -2324,6 +2416,14 @@ body{
     line-height: 2vw;
   }
 
+  .lg\:leading-\[3vw\] {
+    line-height: 3vw;
+  }
+
+  .lg\:leading-\[6\.5vw\] {
+    line-height: 6.5vw;
+  }
+
   .lg\:leading-\[6vw\] {
     line-height: 6vw;
   }
@@ -2332,4 +2432,6 @@ body{
     letter-spacing: -0.05em;
   }
 }
+
+
 
