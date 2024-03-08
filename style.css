@@ -1112,9 +1112,9 @@ video {
   padding: 2vw;
 }
 
-.px-\[4vw\] {
-  padding-left: 4vw;
-  padding-right: 4vw;
+.px-\[3vw\] {
+  padding-left: 3vw;
+  padding-right: 3vw;
 }
 
 .px-\[5vw\] {
@@ -1125,6 +1125,11 @@ video {
 .py-\[10vw\] {
   padding-top: 10vw;
   padding-bottom: 10vw;
+}
+
+.py-\[2\.5vw\] {
+  padding-top: 2.5vw;
+  padding-bottom: 2.5vw;
 }
 
 .py-\[4vw\] {
@@ -1140,21 +1145,6 @@ video {
 .py-\[5vw\] {
   padding-top: 5vw;
   padding-bottom: 5vw;
-}
-
-.py-\[3vw\] {
-  padding-top: 3vw;
-  padding-bottom: 3vw;
-}
-
-.px-\[3vw\] {
-  padding-left: 3vw;
-  padding-right: 3vw;
-}
-
-.py-\[2\.5vw\] {
-  padding-top: 2.5vw;
-  padding-bottom: 2.5vw;
 }
 
 .pb-\[4vh\] {
@@ -2310,14 +2300,14 @@ body{
     padding-right: 0vw;
   }
 
+  .lg\:px-\[1\.5vw\] {
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+  }
+
   .lg\:px-\[2\.5vw\] {
     padding-left: 2.5vw;
     padding-right: 2.5vw;
-  }
-
-  .lg\:px-\[5vw\] {
-    padding-left: 5vw;
-    padding-right: 5vw;
   }
 
   .lg\:py-\[1vw\] {
@@ -2333,31 +2323,6 @@ body{
   .lg\:py-\[2vw\] {
     padding-top: 2vw;
     padding-bottom: 2vw;
-  }
-
-  .lg\:py-\[5vw\] {
-    padding-top: 5vw;
-    padding-bottom: 5vw;
-  }
-
-  .lg\:px-\[2vw\] {
-    padding-left: 2vw;
-    padding-right: 2vw;
-  }
-
-  .lg\:py-\[1\.5vw\] {
-    padding-top: 1.5vw;
-    padding-bottom: 1.5vw;
-  }
-
-  .lg\:py-\[1\.2vw\] {
-    padding-top: 1.2vw;
-    padding-bottom: 1.2vw;
-  }
-
-  .lg\:px-\[1\.5vw\] {
-    padding-left: 1.5vw;
-    padding-right: 1.5vw;
   }
 
   .lg\:pl-\[10vw\] {
