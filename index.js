@@ -515,62 +515,62 @@ moreProjectsBtn.addEventListener("click", ()=>{
 
 // ---------------------------------------starting animation page-------------------------------------
 
-const startingAnimPage = document.querySelector("#starting-animation-page");
+// const startingAnimPage = document.querySelector("#starting-animation-page");
 
-function showStartingAnim(){
-  startingAnimPage.style.top = 0;
-  const timelineStartingAnimation = gsap.timeline();
+// function showStartingAnim(){
+//   startingAnimPage.style.top = 0;
+//   const timelineStartingAnimation = gsap.timeline();
 
-  timelineStartingAnimation
-    .to("#starting-anim-title-1", {
-      visibility:"visible",
-      duration:1,
-      delay:0.5,
-    })
-    .to("#starting-anim-title-1", {
-      visibility:"hidden",
-      duration:0
-    })
-    .to("#starting-anim-title-2", {
-      visibility:"visible",
-      duration:1
-    })
-    .to("#starting-anim-title-2", {
-      visibility:"hidden",
-      duration:0
-    })
-    .to("#starting-anim-title-3", {
-      visibility:"visible",
-      duration:1
-    })
-    .to("#starting-anim-title-3", {
-      visibility:"hidden",
-      duration:0
-    })
-    .to("#starting-animation-page",{
-      top:"-500vh",
-      duration:2,
-      ease:"power1.out"
-    });
-}
+//   timelineStartingAnimation
+//     .to("#starting-anim-title-1", {
+//       visibility:"visible",
+//       duration:1,
+//       delay:0.5,
+//     })
+//     .to("#starting-anim-title-1", {
+//       visibility:"hidden",
+//       duration:0
+//     })
+//     .to("#starting-anim-title-2", {
+//       visibility:"visible",
+//       duration:1
+//     })
+//     .to("#starting-anim-title-2", {
+//       visibility:"hidden",
+//       duration:0
+//     })
+//     .to("#starting-anim-title-3", {
+//       visibility:"visible",
+//       duration:1
+//     })
+//     .to("#starting-anim-title-3", {
+//       visibility:"hidden",
+//       duration:0
+//     })
+//     .to("#starting-animation-page",{
+//       top:"-500vh",
+//       duration:2,
+//       ease:"power1.out"
+//     });
+// }
 
-function hideStartingAnim(){
-  startingAnimPage.style.top = "-500vh";
-}
+// function hideStartingAnim(){
+//   startingAnimPage.style.top = "-500vh";
+// }
 
-if (document.cookie.indexOf('startingAnimationSeen=true') === -1) {
-  // If not present, show the Animation and set the cookie
-  showStartingAnim();
+// if (document.cookie.indexOf('startingAnimationSeen=true') === -1) {
+//   // If not present, show the Animation and set the cookie
+//   showStartingAnim();
 
-  var expirationDate = new Date();
-  expirationDate.setHours(expirationDate.getHours() + 0.25);
+//   var expirationDate = new Date();
+//   expirationDate.setHours(expirationDate.getHours() + 0.25);
 
-  document.cookie = 'startingAnimationSeen=true; expires=' + expirationDate.toUTCString();
-}
-else {
-  // If the cookie is present, hide the animation page
-  hideStartingAnim();
-}
+//   document.cookie = 'startingAnimationSeen=true; expires=' + expirationDate.toUTCString();
+// }
+// else {
+//   // If the cookie is present, hide the animation page
+//   hideStartingAnim();
+// }
 
   
 
