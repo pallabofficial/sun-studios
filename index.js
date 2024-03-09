@@ -303,8 +303,8 @@ function expandNavItems(){
           darkScreen.style.transitionDuration = "1s"
         }
         else{
-            navItems.style.top = "-200%";
-            darkScreen.style.top = "-200%";
+            navItems.style.top = "-500vh";
+            darkScreen.style.top = "-500vh";
             
             if(screenMode==="white"){
               menuIconWhiteScreen.style.opacity = 1;
