@@ -90,6 +90,43 @@ if (document.cookie.indexOf('disclaimerSeen=true') === -1) {
 disclaimerContinueBtn.addEventListener('click', (event) => {
   // When the continue button is clicked, hide the disclaimer
   hideDisclaimer();
+
+
+  document.querySelector("#starting-animation-page").style.top = 0;
+  const timelineStartingAnimation = gsap.timeline();
+
+  timelineStartingAnimation
+    .to("#starting-anim-title-1", {
+      visibility:"visible",
+      duration:1,
+      delay:0.5,
+    })
+    .to("#starting-anim-title-1", {
+      visibility:"hidden",
+      duration:0
+    })
+    .to("#starting-anim-title-2", {
+      visibility:"visible",
+      duration:1
+    })
+    .to("#starting-anim-title-2", {
+      visibility:"hidden",
+      duration:0
+    })
+    .to("#starting-anim-title-3", {
+      visibility:"visible",
+      duration:1
+    })
+    .to("#starting-anim-title-3", {
+      visibility:"hidden",
+      duration:0
+    })
+    .to("#starting-animation-page",{
+      top:"-500vh",
+      duration:2,
+      ease:"power1.out"
+    });
+  
 });
 
 disclaimerExitBtn.addEventListener('click', (event) => {
@@ -474,6 +511,69 @@ moreProjectsBtn.addEventListener("click", ()=>{
  let message = "This button is designed just to make the website look realistic.The projects mentioned over here are fictional and not real entity."
  displayAlertBox(message)
 })
+
+
+// ---------------------------------------starting animation page-------------------------------------
+
+const startingAnimPage = document.querySelector("#starting-animation-page");
+
+function showStartingAnim(){
+  startingAnimPage.style.top = 0;
+  const timelineStartingAnimation = gsap.timeline();
+
+  timelineStartingAnimation
+    .to("#starting-anim-title-1", {
+      visibility:"visible",
+      duration:1,
+      delay:0.5,
+    })
+    .to("#starting-anim-title-1", {
+      visibility:"hidden",
+      duration:0
+    })
+    .to("#starting-anim-title-2", {
+      visibility:"visible",
+      duration:1
+    })
+    .to("#starting-anim-title-2", {
+      visibility:"hidden",
+      duration:0
+    })
+    .to("#starting-anim-title-3", {
+      visibility:"visible",
+      duration:1
+    })
+    .to("#starting-anim-title-3", {
+      visibility:"hidden",
+      duration:0
+    })
+    .to("#starting-animation-page",{
+      top:"-500vh",
+      duration:2,
+      ease:"power1.out"
+    });
+}
+
+function hideStartingAnim(){
+  startingAnimPage.style.top = "-500vh";
+}
+
+if (document.cookie.indexOf('startingAnimationSeen=true') === -1) {
+  // If not present, show the Animation and set the cookie
+  showStartingAnim();
+
+  var expirationDate = new Date();
+  expirationDate.setHours(expirationDate.getHours() + 0.25);
+
+  document.cookie = 'startingAnimationSeen=true; expires=' + expirationDate.toUTCString();
+}
+else {
+  // If the cookie is present, hide the animation page
+  hideStartingAnim();
+}
+
+  
+
 
 
 
