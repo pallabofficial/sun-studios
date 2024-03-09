@@ -24,8 +24,8 @@ function displayAlertBox(notification){
 
 
 closeAlertBtn.addEventListener("click",(event)=> {
-    alertBox.style.top="-150vh";
-    alertOverlay.style.top = "-150vh";
+    alertBox.style.top="-500vh";
+    alertOverlay.style.top = "-500vh";
     body.style.overflow = ""
 })
 
@@ -351,21 +351,43 @@ aboutVideo.playbackRate = 0.5;
 
 const projectCards = document.querySelectorAll(".featured-card");
 const projectImages = document.querySelectorAll(".image-container");
+const backgroundDiv = document.querySelectorAll(".project-background-div");
 
 if(screenWidth>=769 && window.innerHeight<=769){
   projectCards.forEach((card, index) => {
-    card.addEventListener("mouseover", () => {
-      card.style.backgroundColor = "#FF9831";
+    card.addEventListener("mouseenter", () => {
+      gsap.to(backgroundDiv[index],{
+        
+        top:0,
+        duration:0.1,
+        ease:"linear",
+      });
+      
       let correspondingImage = projectImages[index];
       correspondingImage.style.display = "inline";
-      correspondingImage.style.opacity = 1;
+      gsap.to(correspondingImage, {
+        
+        opacity:1,
+        duration:0.3
+      })
+      
+      
 
     });
-    card.addEventListener("mouseout", () => {
-      card.style.backgroundColor = "transparent";
+    card.addEventListener("mouseleave", () => {
+      gsap.to(backgroundDiv[index],{
+        
+        top:"-101%",
+        duration:0.1,
+        ease:"linear",
+      });
       let correspondingImage = projectImages[index];
       correspondingImage.style.display = "none";
-      correspondingImage.style.opacity = 0;
+      gsap.to(correspondingImage, {
+        
+        opacity:0,
+        duration:0.3
+      })
     });
   });
 }
@@ -452,4 +474,25 @@ moreProjectsBtn.addEventListener("click", ()=>{
  let message = "This button is designed just to make the website look realistic.The projects mentioned over here are fictional and not real entity."
  displayAlertBox(message)
 })
+
+
+
+
+
+// -------------------------------------about section description gsap animation-------------------------------
+
+// gsap.from("#about-desc", {
+//   opacity:0,
+//   duration:0.5,
+//   y:"100%",
+//   scrollTrigger:{
+//     trigger: "#about-desc",
+//     start:"top -80",
+//     scroller:"body",
+//     markers:true,
+    
+//   }
+// })
+
+
 
