@@ -78,7 +78,7 @@ body{
 
 /* -----------for large screens(PCs and laptops)------------ */
 
-@media (min-width:769px)and (max-height: 769px) {
+@media (min-width:769px) {
   #alert-box{
     gap:1vw;
     width:33vw;
@@ -264,7 +264,7 @@ body{
 
 /* ----------------medium screens----------------------------------------------- */
 
-@media (min-width:481px) and (max-width:768px){
+@media (min-width:481px){
   #navbar{
       height: 20vh;
   }
@@ -297,7 +297,7 @@ body{
 
 /* ---------for large screens (PCs and laptops (ipads excluded))-------------- */
 
-@media (min-width:769px) and (max-height:769px){
+@media (min-width:769px) {
   #navbar{
       height: 25vh;
       background-color: transparent;
@@ -357,7 +357,7 @@ body{
 }
 
 /* ------------------------------for large screens------------------------ */
-@media (min-width:769px)  and (max-height:769px){
+@media (min-width:769px){
   #banner{
     display: flex;
     flex-direction: row-reverse; 
@@ -416,7 +416,7 @@ body{
 }
 
 /* ---------------------------------------------for large screen------------------------------ */
-@media (min-width:769px)  and (max-height:769px){
+@media (min-width:769px)  {
   .slider-text{
     font-size: 10vw;
     
@@ -465,7 +465,7 @@ body{
 
 /* ----------------------------------------for large screens--------------------------- */
 
-@media(min-width:769px) and (max-height:769px){
+@media(min-width:769px){
   /* #about{
     min-height:content;
   } */
@@ -804,6 +804,25 @@ body{
   
   .client-desc{
     font-size: 1.2vw;
+  }
+}
+
+/* -----------------------------------------------------contact------------------------------------- */
+
+#contact{
+  max-height: fit-content;
+}
+#contact-anim{
+  animation: anim-contact 4s linear  infinite alternate;
+  /* transform-origin: 0% 0%; */
+}
+
+@keyframes anim-contact {
+  from{
+      transform:translate(-20vw,5vw) scale(1.25) skew(0deg,-15deg);
+  }
+  to{
+      transform:translate(10vw,-20vw) skew(0deg,0deg);
   }
 }
 
