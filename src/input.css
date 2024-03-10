@@ -12,8 +12,11 @@ body{
     font-family: "Roboto", sans-serif;    
 }
 #main{
-    /* display:none; */
+    
+   
     background-color: #EFEAE3; 
+    
+   
 }
 
 /* -----------------------------------------------------------alert-box--------------------------------------- */

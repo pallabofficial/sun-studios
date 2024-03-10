@@ -2,7 +2,10 @@
 
 click here to visit the webpage👇👇<br><br>
 • Link-1👉 [https://pallabofficialsunstudio.netlify.app/]<br><br>
-• Link-2👉 [https://pallabofficial.github.io/sun-studios/]<br><br>  
+  
+
+## Status
+ongoing (in development process)<br><br> 
 
 
 ## Description
@@ -22,9 +25,11 @@ Front-end:-<br>
 •	expand nav item section: fix the transition property, it should apply only for positions❌ <br>
 •	find white icons for dark screen mode✅<br>
 •	fix the footer email form❌<br>
-•	add an instruction box in the featured section❌<br>
+•	add an instruction box in the featured section✅<br>
+•	fix the overlap of the starting animation❌<br>
+•	featured section hover area❌<br>
 •	smooth animation while moving to specific section✅<br>
-•	create a contact section❌<br>
+•	create a contact section✅<br>
 •	fix the not working of the exit website button in disclaimer box in browsers other than chrome⚠️(temporary fix)<br>
 •	change the hover effect of navitems while dark mode❌<br>
 •	change the arrow color of the more-projects button while hovered❌<br>
