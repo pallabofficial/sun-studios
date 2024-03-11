@@ -17,7 +17,7 @@ Front-end:-<br>
 • HTML<br>
 • CSS<br>
 • Javascript (vanilla)<br>
-• Libraries:- Tailwind CSS(for styling), gsap(for animations)<br><br>  
+• Libraries:- Tailwind CSS(for styling), gsap(for smooth animations)<br><br>  
 
 
 ## Tasks pending (❌-> not yet completed  ✅-> task completed)
