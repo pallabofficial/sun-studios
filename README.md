@@ -20,7 +20,7 @@ Front-end:-<br>
 • Libraries:- Tailwind CSS(for styling), gsap(for smooth animations)<br><br>  
 
 
-## Tasks pending (❌-> not yet completed  ✅-> task completed)
+## Tasks pending (❌-> task not yet completed  ✅-> task completed)
 •	Section clients: fix the whitespace property of the client description element ✅<br>
 •	expand nav item section: fix the transition property, it should apply only for positions❌ <br>
 •	find white icons for dark screen mode✅<br>
