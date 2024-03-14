@@ -59,7 +59,7 @@ Front-end:-<br>
 
 
 ## License
-Free to use<br><br>
+Free to use.<br><br>
 
 
 ## Acknowledgements
