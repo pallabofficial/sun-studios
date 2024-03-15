@@ -48,7 +48,6 @@ Front-end:-<br>
 
 ## Scope of Improvement
 •	1<br>
-•	2<br><br>
 
 
 ## Installation
