@@ -1,6 +1,6 @@
 # Sun Studios
 
-click here to visit the webpage👇👇<br><br>
+click here to visit the websitr👇👇<br><br>
 • Link👉 [https://pallabofficialsunstudio.netlify.app/]<br><br>
   
 
