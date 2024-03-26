@@ -9,7 +9,7 @@ ongoing (in development process)<br><br>
 
 
 ## Description
-Sun Studios is a front-end project spotlighting the portfolio of Sun Studios, a service-based company offering exceptional web development services. Explore the showcase of innovative web solutions, demonstrating the creative excellence of Sun Studio's service offerings.<br> [Note]: This project is primarily front-end with minimal backend integration.<br><br>  
+Sun Studios is a front-end project spotlighting the portfolio of Sun Studios, a service-based company offering exceptional web development services. Explore the showcase of innovative web solutions, demonstrating the creative excellence of Sun Studio's service offerings.<br> [Note]: This project is primarily front-end oriented with minimal backend integration.<br><br>  
 
 
 ## Technologies Used
