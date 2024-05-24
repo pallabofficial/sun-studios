@@ -579,7 +579,7 @@ else {
 
 
 
-// -------------------------------------about section description gsap animation-------------------------------
+// -----------------------------------about section description gsap animation-------------------------------
 
 // gsap.from("#about-desc", {
 //   opacity:0,
